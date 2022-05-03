@@ -9,6 +9,11 @@ import Home from "./pages/home";
 import { useState } from "react";
 import Footer from "./components/footer";
 
+import ReactGA from "react-ga";
+
+const TRACKING_ID = "G-JD6DSVX4Q3";
+ReactGA.initialize(TRACKING_ID);
+
 const StyledDiv = styled.div`
   background-color: ${(props) => props.theme.colors.bgColor};
   color: ${(props) => props.theme.colors.color};
