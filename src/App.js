@@ -1,24 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
+import styled, { ThemeProvider } from "styled-components";
+
+import "./App.scss";
+import { dark, light } from "./theme";
+
+import Header from "./components/header";
+import Home from "./pages/home";
+import { useState } from "react";
+import Footer from "./components/footer";
+
+const StyledDiv = styled.div`
+  background-color: ${(props) => props.theme.colors.bgColor};
+  color: ${(props) => props.theme.colors.color};
+`;
 
 function App() {
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <ThemeProvider theme={darkMode ? dark : light}>
+        <StyledDiv className={darkMode ? "dark" : "light"}>
+          <Header darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Switch>
+            <Route exact path="/" component={() => <Home />} />
+            <Redirect path="*" to="/" />
+          </Switch>
+          <Footer />
+        </StyledDiv>
+      </ThemeProvider>
+    </BrowserRouter>
   );
 }
 

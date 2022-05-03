@@ -1,0 +1,38 @@
+div.pub-entry {
+  padding: 0.5rem 0;
+}
+
+.pub-title {
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.pub-title a,
+.pub-name a {
+  color: inherit;
+  text-decoration: none;
+}
+.pub-title a:hover,
+.pub-name a:hover {
+  text-decoration: underline;
+}
+
+div.pub-name,
+div.pub-detail {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+span.my-name {
+  font-weight: 700;
+}
+
+.pub-detail a {
+  color: inherit;
+}
+
+.pub-award .pub-award {
+  font-size: 0.8rem;
+  font-weight: 500;
+  background-color: rgb(145, 145, 145) !important;
+  margin-right: 5px;
+}

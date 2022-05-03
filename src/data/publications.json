@@ -1,0 +1,44 @@
+[
+  {
+    "title": "Stylette: Styling the Web with Natural Language",
+    "url": "https://dl.acm.org/doi/10.1145/3491102.3501931",
+    "conference": "CHI 2022",
+    "authors": [
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Yoonseo Choi", "url": "https://yoonseochoi.com/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": false,
+    "award": "Honorable Mention Award",
+    "website": "https://stylette.kixlab.org",
+    "pdf": "https://kixlab.github.io/website-files/2022/chi2022-stylette-paper.pdf",
+    "video": "https://youtu.be/7ZJZpIW9FHc",
+    "img": "/assets/img/stylette.png"
+  },
+  {
+    "title": "Reflect, not Regret: Understanding Regretful Smartphone Use with App Feature-Level Analysis",
+    "url": "https://dl.acm.org/doi/10.1145/3479600",
+    "conference": "CSCW 2021",
+    "authors": [
+      { "name": "Hyunsung Cho", "url": "http://hyunsungcho.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Donghwi Kim" },
+      { "name": "Wan Ju Kang" },
+      {
+        "name": "Eun Kyoung Choe",
+        "url": "https://terpconnect.umd.edu/~choe/"
+      },
+      {
+        "name": "Sung-Ju Lee",
+        "url": "https://sites.google.com/site/wewantsj/"
+      }
+    ],
+    "toappear": false,
+    "award": "Best Paper Award,Methods Recognition",
+    "website": "https://nmsl.kaist.ac.kr/projects/finesse/",
+    "pdf": "https://nmsl.kaist.ac.kr/pdf/CSCW21_Reflect.pdf",
+    "video": "https://youtu.be/ZWva_OIv2xw",
+    "img": "/assets/img/finesse.png"
+  }
+]

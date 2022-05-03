@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Radio+Canada:wght@300;400;500;600;700&display=swap");
+
+$primary-color: #ffc651;
+$primary-color-darken: #f0a100;
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-container {
+  width: 860px;
+  margin: auto;
+  flex-wrap: inherit;
+}
+@media screen and (max-width: 992px) {
+  .custom-container {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .custom-section {
+    margin-top: 1rem;
+  }
+}
+
+h1 {
+  // font-family: "Radio Canada", sans-serif;
+  font-weight: bold;
+}
+h2 {
+  font-size: calc(1.3rem + 0.8vw);
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+h3 {
+  font-size: calc(0.8rem + 0.7vw);
+  font-weight: 700;
+}
+
+.light a {
+  color: $primary-color-darken;
+}
+.light a:hover {
+  // color: $primary-color;
+  filter: brightness(85%);
+}
+.dark a {
+  color: $primary-color;
+}
+.dark a:hover {
+  // color: $primary-color-darken;
+  filter: brightness(85%);
+}
+
+a.icon-link {
+  color: inherit;
+}
+a.icon-link:hover {
+  filter: brightness(85%);
+}
