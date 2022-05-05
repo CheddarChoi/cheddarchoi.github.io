@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
@@ -9,7 +9,7 @@ const Header = (props) => {
       bg="transparent"
       expand="lg"
       variant={props.darkMode ? "dark" : "light"}
-      className="py-4"
+      className="py-4 position-relative"
     >
       <div className="custom-container d-flex align-items-center justify-content-between">
         <Navbar.Brand href="/">

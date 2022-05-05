@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
 
@@ -6,7 +7,6 @@ import { dark, light } from "./theme";
 
 import Header from "./components/header";
 import Home from "./pages/home";
-import { useState } from "react";
 import Footer from "./components/footer";
 
 import ReactGA from "react-ga";
@@ -21,11 +21,40 @@ const StyledDiv = styled.div`
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
+  const [percent, setPercent] = useState(0);
+
+  const handleScrollAnimation = (e) => {
+    var scrollMaxY = 300;
+    var currScroll = window.pageYOffset || document.documentElement.scrollTop;
+    console.log(currScroll);
+    var percent = Math.min((currScroll * 100) / scrollMaxY, 100);
+    setPercent(percent);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", (e) => {
+      handleScrollAnimation(e);
+    });
+
+    return () => {
+      window.removeEventListener("scroll", (e) => {
+        handleScrollAnimation(e);
+      });
+    };
+  }, []);
 
   return (
     <BrowserRouter>
       <ThemeProvider theme={darkMode ? dark : light}>
         <StyledDiv className={darkMode ? "dark" : "light"}>
+          <div
+            className="background-container"
+            style={{ backgroundPositionX: `${percent}%` }}
+          ></div>
+          <div
+            className="background-container-flipped"
+            style={{ backgroundPositionX: `${100 - percent}%` }}
+          ></div>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Switch>
             <Route exact path="/" component={() => <Home />} />
