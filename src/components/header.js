@@ -25,7 +25,7 @@ const Header = (props) => {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link href="/">About</Nav.Link>
-            <Nav.Link href="/publications">Publications</Nav.Link>
+            <Nav.Link href="#publications">Publications</Nav.Link>
             <Nav.Link>
               {props.darkMode ? (
                 <LightModeOutlinedIcon
