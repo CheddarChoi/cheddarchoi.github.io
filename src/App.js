@@ -26,8 +26,7 @@ function App() {
   const handleScrollAnimation = (e) => {
     var scrollMaxY = 300;
     var currScroll = window.pageYOffset || document.documentElement.scrollTop;
-    console.log(currScroll);
-    var percent = Math.min((currScroll * 100) / scrollMaxY, 100);
+    var percent = Math.abs(Math.min((currScroll * 100) / scrollMaxY, 100));
     setPercent(percent);
   };
 
