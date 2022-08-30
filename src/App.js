@@ -9,10 +9,10 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Footer from "./components/footer";
 
-import ReactGA from "react-ga";
-const TRACKING_ID = "UA-227699660-1";
+import ReactGA from "react-ga4";
+const TRACKING_ID = "G-2EGWKG1G8W";
 ReactGA.initialize(TRACKING_ID);
-ReactGA.pageview(window.location.pathname + window.location.search);
+ReactGA.send("pageview");
 
 const StyledDiv = styled.div`
   background-color: ${(props) => props.theme.colors.bgColor};
