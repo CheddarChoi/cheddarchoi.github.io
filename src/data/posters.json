@@ -9,7 +9,7 @@
       { "name": "Matthew Beane" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true,
+    "toappear": false,
     "img": "/assets/img/stylette.png"
   }
 ]

@@ -1,5 +1,5 @@
 div.pub-entry {
-  padding: 0.5rem 0;
+  padding: 0.7rem 0;
 }
 
 .pub-title {
@@ -35,4 +35,5 @@ span.my-name {
   font-weight: 500;
   background-color: rgb(145, 145, 145) !important;
   margin-right: 5px;
+  margin-top: 5px;
 }
