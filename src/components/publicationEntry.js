@@ -1,11 +1,17 @@
-import { Button, Badge } from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 import "./publicationEntry.css";
 
 function PublicationEntry({ publication }) {
   return (
     <div className="pub-entry">
-      <div className="pub-title">
-        <a href={publication.url}>{publication.title}</a>
+      <div className="d-flex justify-content-between">
+        <div className="pub-title">
+          <a href={publication.url}>{publication.title}</a>
+        </div>
+        <div className="pub-detail">
+          <b>{publication.conference}</b>
+          {publication.toappear ? " (To Appear)" : ""}
+        </div>
       </div>
       <div className="pub-name">
         {publication.authors.map((author, i) => (
@@ -13,34 +19,34 @@ function PublicationEntry({ publication }) {
             {author.url ? (
               <a href={author.url}>{author.name}</a>
             ) : (
-              <span className={author.name === "DaEun Choi" ? "my-name" : ""}>
-                {author.name}
-              </span>
+              <span className={author.name === "DaEun Choi" ? "my-name" : ""}>{author.name}</span>
             )}
 
             {i !== publication.authors.length - 1 && ", "}
           </>
         ))}
       </div>
-      <div className="pub-detail">
-        {publication.conference}
-        {publication.toappear ? " (To Appear)" : ""}
+      <div className="pub-detail my-1">
+        {publication.workshop && <>{publication.workshop}</>}
         {publication.website && (
           <>
-            {" "}
-            | <a href={publication.website}>website</a>
+            <a className="me-2" href={publication.website}>
+              Project website
+            </a>
           </>
         )}
         {publication.pdf && (
           <>
-            {" "}
-            | <a href={publication.pdf}>PDF</a>
+            <a className="me-2" href={publication.pdf}>
+              PDF
+            </a>
           </>
         )}
         {publication.video && (
           <>
-            {" "}
-            | <a href={publication.video}>Video</a>
+            <a className="me-2" href={publication.video}>
+              Video
+            </a>
           </>
         )}
       </div>

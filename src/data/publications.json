@@ -1,5 +1,18 @@
 [
   {
+    "title": "Surch: Enabling Structural Search and Comparison for Surgical Videos",
+    "url": "",
+    "conference": "CHI 2023",
+    "authors": [
+      { "name": "Jeongyeon Kim", "url": "https://www.jeongyeon.kim/" },
+      { "name": "DaEun Choi" },
+      { "name": "Nicole Lee" },
+      { "name": "Matthew Beane", "url": "https://tmp.ucsb.edu/people/matt-beane" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true
+  },
+  {
     "title": "Stylette: Styling the Web with Natural Language",
     "url": "https://dl.acm.org/doi/10.1145/3491102.3501931",
     "conference": "CHI 2022",

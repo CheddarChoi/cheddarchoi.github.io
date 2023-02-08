@@ -3,11 +3,11 @@ div.pub-entry {
 }
 
 .pub-title {
-  margin-bottom: 5px;
+  /* margin-bottom: 5px; */
   font-size: 1rem;
   font-weight: 600;
 }
-.pub-title a,
+
 .pub-name a {
   color: inherit;
   text-decoration: none;

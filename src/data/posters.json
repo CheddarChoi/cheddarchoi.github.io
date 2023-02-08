@@ -2,7 +2,8 @@
   {
     "title": "Techniques for Semantic Search and Comparison for Robotic Surgery Videos",
     "url": "",
-    "conference": "CHI 2022 Workshop on Integration of Human Factors in Surgery: Interdisciplinary Collaboration in Design, Development, and Evaluation of Surgical Technologies",
+    "conference": "CHI 2022 Workshop",
+    "workshop": "CHI 2022 Workshop on Integration of Human Factors in Surgery: Interdisciplinary Collaboration in Design, Development, and Evaluation of Surgical Technologies",
     "authors": [
       { "name": "Jeongyeon Kim", "url": "https://www.jeongyeon.kim/" },
       { "name": "DaEun Choi" },
