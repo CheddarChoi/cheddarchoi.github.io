@@ -1,23 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.90e13755.css",
-    "main.js": "/static/js/main.24bcfb02.js",
+    "main.css": "/static/css/main.d74a8518.css",
+    "main.js": "/static/js/main.acf3e886.js",
     "static/js/787.9db08070.chunk.js": "/static/js/787.9db08070.chunk.js",
-    "static/media/academicons.svg": "/static/media/academicons.c788a0dd6b8ea2fdfba6.svg",
-    "static/media/academicons.woff": "/static/media/academicons.f9238352271492d38233.woff",
-    "static/media/academicons.eot": "/static/media/academicons.187230b51fe48546c4f7.eot",
-    "static/media/academicons.ttf": "/static/media/academicons.813078f03d628816fd64.ttf",
     "index.html": "/index.html",
     "static/media/waveFlipped.svg": "/static/media/waveFlipped.85e53a559aa2a8d23469.svg",
     "static/media/wave.svg": "/static/media/wave.2aca50a0302d9185de38.svg",
     "static/media/waveSmall.svg": "/static/media/waveSmall.07d1f3eec9160c4304a0.svg",
     "static/media/waveSmallFlipped.svg": "/static/media/waveSmallFlipped.65d6838e66eaba2afc86.svg",
-    "main.90e13755.css.map": "/static/css/main.90e13755.css.map",
-    "main.24bcfb02.js.map": "/static/js/main.24bcfb02.js.map",
+    "main.d74a8518.css.map": "/static/css/main.d74a8518.css.map",
+    "main.acf3e886.js.map": "/static/js/main.acf3e886.js.map",
     "787.9db08070.chunk.js.map": "/static/js/787.9db08070.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.90e13755.css",
-    "static/js/main.24bcfb02.js"
+    "static/css/main.d74a8518.css",
+    "static/js/main.acf3e886.js"
   ]
 }
