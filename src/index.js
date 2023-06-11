@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./_bootstrap.scss";
 import "./index.css";
-import "academicons/css/academicons.min.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 

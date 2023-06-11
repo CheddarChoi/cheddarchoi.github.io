@@ -1,7 +1,7 @@
 import { Nav, Navbar } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
+import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = (props) => {
   return (
@@ -28,12 +28,14 @@ const Header = (props) => {
             <Nav.Link href="#publications">Publications</Nav.Link>
             <Nav.Link>
               {props.darkMode ? (
-                <LightModeOutlinedIcon
+                <FontAwesomeIcon
+                  icon={faSun}
                   style={{ cursor: "pointer" }}
                   onClick={() => props.setDarkMode(false)}
                 />
               ) : (
-                <DarkModeOutlinedIcon
+                <FontAwesomeIcon
+                  icon={faMoon}
                   style={{ cursor: "pointer" }}
                   onClick={() => props.setDarkMode(true)}
                 />

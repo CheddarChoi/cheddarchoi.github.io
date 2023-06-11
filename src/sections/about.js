@@ -1,11 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Image, Row } from "react-bootstrap";
 
-import {
-  faGithubSquare,
-  faTwitterSquare,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
+import { faGithubSquare, faTwitterSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 
 import "./about.css";
@@ -15,12 +11,7 @@ function About() {
     <>
       <Row className="custom-section justify-content-center gx-5 pb-5">
         <Col xs={6} sm={6} md={4}>
-          <Image
-            className="w-100"
-            rounded
-            src="daeun.jpg"
-            alt="illustrated version profile"
-          />
+          <Image className="w-100" rounded src="daeun.jpg" alt="illustrated version profile" />
         </Col>
         <Col sm={12} md={12} lg={8}>
           <div className="name-section">
@@ -28,16 +19,15 @@ function About() {
             <h5>You can call me Diane.</h5>
           </div>
           <p className="py-3">
-            I am a Master's student in{" "}
-            <a href="http://cs.kaist.ac.kr">School of Computing</a>, KAIST. I am
-            working with <a href="http://juhokim.com">Juho Kim</a> at{" "}
-            <a href="http://kixlab.org">KIXLAB(KAIST Interaction Lab)</a>.
-            I&#x27;m interested in HCI, especially AI-infused creativity
-            supporting tools, digital well-being, and online learning.
+            I am a Master's student in <a href="http://cs.kaist.ac.kr">School of Computing</a>,
+            KAIST. I am working with <a href="http://juhokim.com">Juho Kim</a> at{" "}
+            <a href="http://kixlab.org">KIXLAB(KAIST Interaction Lab)</a>. I&#x27;m interested in
+            HCI, especially AI-infused creativity supporting tools, digital well-being, and online
+            learning.
           </p>
           <div className="icon-section">
             <a
-              className="icon-link"
+              className="iconLink"
               target="_blank"
               href="mailto:daeun.choi@kaist.ac.kr"
               rel="noreferrer"
@@ -45,7 +35,7 @@ function About() {
               <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
             </a>
             <a
-              className="icon-link"
+              className="iconLink"
               target="_blank"
               href="https://scholar.google.com/citations?user=pI3S-WQAAAAJ"
               rel="noreferrer"
@@ -53,7 +43,7 @@ function About() {
               <i className="ai ai-google-scholar-square fa-2x"></i>
             </a>
             <a
-              className="icon-link"
+              className="iconLink"
               target="_blank"
               href="https://github.com/CheddarChoi/"
               rel="noreferrer"
@@ -61,7 +51,7 @@ function About() {
               <FontAwesomeIcon icon={faGithubSquare} size="2x" />
             </a>
             <a
-              className="icon-link"
+              className="iconLink"
               target="_blank"
               href="https://twitter.com/daeun_choi_"
               rel="noreferrer"
@@ -69,19 +59,14 @@ function About() {
               <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
             </a>
             <a
-              className="icon-link"
+              className="iconLink"
               target="_blank"
               href="https://www.linkedin.com/in/daeun-choi-1103/"
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
             </a>
-            <a
-              className="icon-link"
-              target="_blank"
-              href="/CV.pdf"
-              rel="noreferrer"
-            >
+            <a className="iconLink" target="_blank" href="/CV.pdf" rel="noreferrer">
               <i class="ai ai-cv-square fa-2x"></i>
             </a>
           </div>

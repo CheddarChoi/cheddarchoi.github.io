@@ -1,7 +1,7 @@
 import About from "../sections/about";
 import Publications from "../sections/publications";
 
-import "./wave.css";
+import "../assets/wave.css";
 
 function Home() {
   return (
