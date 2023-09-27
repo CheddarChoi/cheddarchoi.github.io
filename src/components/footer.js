@@ -9,7 +9,7 @@ const Footer = (props) => {
       <div className="footer-background" />
       <div className="footer-background-flipped" />
       <div className="custom-container footer-content">
-        <div className="row" style={{ fontSize: "0.75rem" }}>
+        <div className="row align-items-center" style={{ fontSize: "0.75rem" }}>
           <div className="col-4 text-start">
             <div>© 2023 Created by DaEun Choi</div>
           </div>
@@ -24,7 +24,7 @@ const Footer = (props) => {
             </a>
           </div>
           <div className="col-4 text-end">
-            <div>Last Updated: June 10, 2023</div>
+            <div>Last Updated: Sep 27, 2023</div>
           </div>
         </div>
       </div>

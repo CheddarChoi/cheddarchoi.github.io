@@ -4,7 +4,7 @@ import "./publicationEntry.css";
 function PublicationEntry({ publication }) {
   return (
     <div className="pub-entry">
-      <div className="d-flex justify-content-between">
+      <div className="d-lg-flex justify-content-between">
         <div className="pub-title">
           <a href={publication.url}>{publication.title}</a>
         </div>
@@ -19,7 +19,9 @@ function PublicationEntry({ publication }) {
             {author.url ? (
               <a href={author.url}>{author.name}</a>
             ) : (
-              <span className={author.name === "DaEun Choi" ? "my-name" : ""}>{author.name}</span>
+              <span className={author.name.includes("DaEun Choi") ? "my-name" : ""}>
+                {author.name}
+              </span>
             )}
 
             {i !== publication.authors.length - 1 && ", "}

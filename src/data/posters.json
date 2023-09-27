@@ -1,5 +1,17 @@
 [
   {
+    "title": "AudiLens: Configurable LLM-Generated Audiences for Public Speech Practice",
+    "url": "",
+    "conference": "UIST 2023 SIC",
+    "workshop": "UIST 2023 Student Innovation Contest",
+    "authors": [
+      { "name": "Jeongeon Park *", "url": "https://jeongeonpark.com/" },
+      { "name": "DaEun Choi *" }
+    ],
+    "toappear": true,
+    "img": "/assets/img/stylette.png"
+  },
+  {
     "title": "Techniques for Semantic Search and Comparison for Robotic Surgery Videos",
     "url": "",
     "conference": "CHI 2022 Workshop",

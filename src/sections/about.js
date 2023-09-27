@@ -19,13 +19,16 @@ function About() {
             <h5>You can call me Diane.</h5>
           </div>
           <p className="py-3">
-            I am a Master's student in <a href="http://cs.kaist.ac.kr">School of Computing</a>,
-            KAIST. I am working with <a href="http://juhokim.com">Juho Kim</a> at{" "}
-            <a href="http://kixlab.org">KIXLAB(KAIST Interaction Lab)</a>. I&#x27;m interested in
-            HCI, especially AI-infused creativity supporting tools, digital well-being, and online
-            learning.
+            I am a Master's student in the <a href="http://cs.kaist.ac.kr">School of Computing</a>{" "}
+            at KAIST. I am working with <a href="http://juhokim.com">Prof. Juho Kim</a> at{" "}
+            <a href="http://kixlab.org">KIXLAB(KAIST Interaction Lab)</a>. I'm interested in
+            Human-Computer Interaction(HCI), especially in building AI-infused creativity supporting
+            tools.
           </p>
           <div className="icon-section">
+            <a className="iconLink" target="_blank" href="/CV.pdf" rel="noreferrer">
+              <i class="ai ai-cv-square fa-2x"></i>
+            </a>
             <a
               className="iconLink"
               target="_blank"
@@ -65,9 +68,6 @@ function About() {
               rel="noreferrer"
             >
               <FontAwesomeIcon icon={faLinkedin} size="2x" />
-            </a>
-            <a className="iconLink" target="_blank" href="/CV.pdf" rel="noreferrer">
-              <i class="ai ai-cv-square fa-2x"></i>
             </a>
           </div>
         </Col>
