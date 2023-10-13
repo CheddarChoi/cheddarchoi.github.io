@@ -1,35 +1,65 @@
 .background-container {
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute;
   top: 0;
 
   background-image: url("/src/assets/img/waveFlipped.svg");
-  background-repeat: no-repeat;
-  background-size: 110%;
+  background-repeat: repeat-x;
+  background-size: 1500px;
   background-position-x: 0%;
 }
 .background-container-flipped {
   width: 100%;
-  height: 300px;
+  height: 200px;
   position: absolute;
   top: 0;
 
   background-image: url("/src/assets/img/wave.svg");
-  background-repeat: no-repeat;
-  background-size: 110%;
+  background-repeat: repeat-x;
+  background-size: 1500px;
   background-position-x: 100%;
 }
 
 @media screen and (max-width: 992px) {
-  .background-container {
-    background-image: url("/src/assets/img/waveSmallFlipped.svg");
-  }
-  .background-container-flipped {
-    background-image: url("/src/assets/img/waveSmall.svg");
-  }
   .background-container,
   .background-container-flipped {
     background-size: 180%;
+  }
+}
+
+.footer-background {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+
+  background-image: url("/src/assets/img/wave.svg");
+  background-repeat: repeat-x;
+  background-size: 900px;
+  background-position-x: 0%;
+
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+}
+.footer-background-flipped {
+  width: 100%;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+
+  background-image: url("/src/assets/img/wave.svg");
+  background-repeat: repeat-x;
+  background-size: 900px;
+  background-position-x: 0%;
+
+  transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+}
+
+@media screen and (max-width: 992px) {
+  .footer-background,
+  .footer-background-flipped {
+    background-size: 200%;
   }
 }

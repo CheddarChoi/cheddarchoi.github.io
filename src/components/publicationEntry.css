@@ -2,10 +2,19 @@ div.pub-entry {
   padding: 0.7rem 0;
 }
 
-.pub-title {
+.light a.pub-title {
   /* margin-bottom: 5px; */
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+  color: black;
+}
+.dark a.pub-title {
+  /* margin-bottom: 5px; */
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
 }
 
 .pub-name a {
@@ -19,7 +28,7 @@ div.pub-entry {
 
 div.pub-name,
 div.pub-detail {
-  font-size: 0.9rem;
+  font-size: 14px;
   font-weight: 400;
 }
 span.my-name {
@@ -33,7 +42,8 @@ span.my-name {
 .pub-award .pub-award {
   font-size: 0.8rem;
   font-weight: 500;
-  background-color: rgb(145, 145, 145) !important;
+  background-color: var(--primary-color-dark);
+  color: black;
   margin-right: 5px;
   margin-top: 5px;
 }

@@ -1,19 +1,41 @@
-import { Badge } from "react-bootstrap";
 import "./publicationEntry.css";
+
+// Custom button component
+function PublicationButton({ href, icon, text, award = false }) {
+  return (
+    <button
+      className={"btn btn-sm me-2" + (award ? " btn-primary" : " btn-secondary")}
+      href={href}
+      style={{
+        padding: "2px 6px",
+        color: "black",
+        fontSize: "12px",
+        fontWeight: "600",
+        cursor: award ? "default" : "pointer",
+        boxShadow: award ? "none" : "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
+      }}
+    >
+      {icon && <i className={"pe-1 " + icon}></i>}
+      {text}
+    </button>
+  );
+}
 
 function PublicationEntry({ publication }) {
   return (
     <div className="pub-entry">
       <div className="d-lg-flex justify-content-between">
-        <div className="pub-title">
-          <a href={publication.url}>{publication.title}</a>
+        <div>
+          <a className="pub-title" href={publication.url}>
+            {publication.title}
+          </a>
         </div>
         <div className="pub-detail">
           <b>{publication.conference}</b>
           {publication.toappear ? " (To Appear)" : ""}
         </div>
       </div>
-      <div className="pub-name">
+      <div className="pub-name pb-1">
         {publication.authors.map((author, i) => (
           <>
             {author.url ? (
@@ -31,30 +53,23 @@ function PublicationEntry({ publication }) {
       <div className="pub-detail my-1">
         {publication.workshop && <>{publication.workshop}</>}
         {publication.website && (
-          <>
-            <a className="me-2" href={publication.website}>
-              Project website
-            </a>
-          </>
+          <PublicationButton
+            href={publication.website}
+            icon="bi bi-house-fill"
+            text="Project website"
+          />
         )}
         {publication.pdf && (
-          <>
-            <a className="me-2" href={publication.pdf}>
-              PDF
-            </a>
-          </>
+          <PublicationButton href={publication.pdf} icon="bi bi-file-pdf-fill" text="PDF" />
         )}
         {publication.video && (
-          <>
-            <a className="me-2" href={publication.video}>
-              Video
-            </a>
-          </>
+          <PublicationButton href={publication.video} icon="bi bi-camera-video-fill" text="Video" />
         )}
       </div>
       <div className="pub-award">
         {publication.award?.split(",").map((award) => (
-          <Badge className="pub-award">{award}</Badge>
+          <PublicationButton href={null} icon="bi bi-award" text={award} award={true} />
+          // <Badge className="pub-award">{award}</Badge>
         ))}
       </div>
     </div>

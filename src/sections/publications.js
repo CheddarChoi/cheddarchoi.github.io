@@ -1,6 +1,7 @@
 import PublicationEntry from "../components/publicationEntry";
 import publicationsData from "../data/publications.json";
 import postersData from "../data/posters.json";
+import preprintData from "../data/preprints.json";
 
 function Publications() {
   return (
@@ -16,6 +17,12 @@ function Publications() {
         <div className="mb-4">
           <h3 className="m-0">Posters, Demos, Workshop Papers</h3>
           {postersData.map((pub) => (
+            <PublicationEntry publication={pub} />
+          ))}
+        </div>
+        <div className="mb-4">
+          <h3 className="m-0">Preprints</h3>
+          {preprintData.map((pub) => (
             <PublicationEntry publication={pub} />
           ))}
         </div>

@@ -2,6 +2,7 @@ $primary-color: #ffc651;
 
 $theme-colors: (
   "primary": $primary-color,
+  "secondary": #e1e1e1,
 );
 
 @import "~bootstrap/scss/bootstrap.scss";

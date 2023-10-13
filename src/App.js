@@ -27,6 +27,7 @@ function App() {
     var scrollMaxY = 300;
     var currScroll = window.pageYOffset || document.documentElement.scrollTop;
     var percent = Math.abs(Math.min((currScroll * 100) / scrollMaxY, 100));
+    console.log(percent);
     setPercent(percent);
   };
 
@@ -48,11 +49,11 @@ function App() {
         <StyledDiv className={darkMode ? "dark" : "light"}>
           <div
             className="background-container"
-            style={{ backgroundPositionX: `${percent}%` }}
+            style={{ backgroundPositionX: `${percent - 10}%` }}
           ></div>
           <div
             className="background-container-flipped"
-            style={{ backgroundPositionX: `${100 - percent}%` }}
+            style={{ backgroundPositionX: `${110 - percent}%` }}
           ></div>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Switch>
@@ -60,6 +61,10 @@ function App() {
             <Redirect path="*" to="/" />
           </Switch>
           <Footer />
+          <div className="position-relative">
+            <div className="footer-background" />
+            <div className="footer-background-flipped" />
+          </div>
         </StyledDiv>
       </ThemeProvider>
     </BrowserRouter>
