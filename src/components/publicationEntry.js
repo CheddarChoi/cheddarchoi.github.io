@@ -3,7 +3,7 @@ import "./publicationEntry.css";
 // Custom button component
 function PublicationButton({ href, icon, text, award = false }) {
   return (
-    <button
+    <a
       className={"btn btn-sm me-2" + (award ? " btn-primary" : " btn-secondary")}
       href={href}
       style={{
@@ -17,7 +17,7 @@ function PublicationButton({ href, icon, text, award = false }) {
     >
       {icon && <i className={"pe-1 " + icon}></i>}
       {text}
-    </button>
+    </a>
   );
 }
 
