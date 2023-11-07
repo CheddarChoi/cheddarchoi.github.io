@@ -51,7 +51,10 @@ function PublicationEntry({ publication }) {
         ))}
       </div>
       <div className="pub-detail my-1">
-        {publication.workshop && <>{publication.workshop}</>}
+        {publication.workshop && <div className="mb-2">{publication.workshop}</div>}
+        {publication.award?.split(",").map((award) => (
+          <PublicationButton href={null} icon="bi bi-award" text={award} award={true} />
+        ))}
         {publication.website && (
           <PublicationButton
             href={publication.website}
@@ -65,12 +68,6 @@ function PublicationEntry({ publication }) {
         {publication.video && (
           <PublicationButton href={publication.video} icon="bi bi-camera-video-fill" text="Video" />
         )}
-      </div>
-      <div className="pub-award">
-        {publication.award?.split(",").map((award) => (
-          <PublicationButton href={null} icon="bi bi-award" text={award} award={true} />
-          // <Badge className="pub-award">{award}</Badge>
-        ))}
       </div>
     </div>
   );
