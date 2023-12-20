@@ -23,6 +23,11 @@ function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [percent, setPercent] = useState(0);
 
+  if (window.location.hostname === "cheddarchoi.github.io") {
+    let newURL = window.location.href.replace("cheddarchoi.github.io", "daeunchoi.com");
+    window.location.href = newURL;
+  }
+
   const handleScrollAnimation = (e) => {
     var scrollMaxY = 300;
     var currScroll = window.pageYOffset || document.documentElement.scrollTop;
