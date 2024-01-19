@@ -1,7 +1,7 @@
 import PublicationEntry from "../components/publicationEntry";
 import publicationsData from "../data/publications.json";
 import postersData from "../data/posters.json";
-import preprintData from "../data/preprints.json";
+// import preprintData from "../data/preprints.json";
 
 function Publications() {
   return (
