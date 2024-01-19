@@ -20,12 +20,12 @@ function Publications() {
             <PublicationEntry publication={pub} />
           ))}
         </div>
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <h3 className="m-0">Preprints</h3>
           {preprintData.map((pub) => (
             <PublicationEntry publication={pub} />
           ))}
-        </div>
+        </div> */}
       </div>
     </>
   );

@@ -2,18 +2,18 @@ div.pub-entry {
   padding: 0.7rem 0;
 }
 
-.light a.pub-title {
-  /* margin-bottom: 5px; */
+.pub-title {
+  margin-bottom: 5px;
+}
+.pub-title a {
   font-size: 16px;
   font-weight: 700;
   text-decoration: none;
+}
+.light .pub-title a {
   color: black;
 }
-.dark a.pub-title {
-  /* margin-bottom: 5px; */
-  font-size: 15px;
-  font-weight: 700;
-  text-decoration: none;
+.dark .pub-title a {
   color: white;
 }
 
@@ -23,7 +23,10 @@ div.pub-entry {
 }
 .pub-title a:hover,
 .pub-name a:hover {
-  text-decoration: underline;
+  text-decoration: wavy underline #ffc651;
+}
+a.pub-title:hover {
+  text-decoration: wavy underline #ffc651;
 }
 
 div.pub-name,
@@ -31,6 +34,18 @@ div.pub-detail {
   font-size: 14px;
   font-weight: 400;
 }
+
+div.pub-venue {
+  width: 120px;
+  text-align: right;
+}
+@media screen and (max-width: 991px) {
+  div.pub-venue {
+    width: 100%;
+    text-align: left;
+  }
+}
+
 span.my-name {
   font-weight: 700;
 }

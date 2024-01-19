@@ -1,5 +1,47 @@
 [
   {
+    "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
+    "url": "",
+    "conference": "CHI 2024",
+    "authors": [
+      { "name": "DaEun Choi" },
+      { "name": "Sumin Hong" },
+      { "name": "Jeongeon Park", "url": "https://jeongeonpark.com/" },
+      { "name": "John Joon Young Chung", "url": "https://johnr0.github.io/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2312.11949.pdf",
+    "website": "https://creativeconnect.kixlab.org"
+  },
+  {
+    "title": "GenQuery: Supporting Expressive Visual Search with Generative Models",
+    "url": "",
+    "conference": "CHI 2024",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2310.01287",
+    "website": "https://genquery.kixlab.org"
+  },
+  {
+    "title": "Demystifying Tacit Knowledge in Graphic Design: Characteristics, Instances, Approaches, and Guidelines",
+    "url": "",
+    "conference": "CHI 2024",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true
+  },
+  {
     "title": "Surch: Enabling Structural Search and Comparison for Surgical Videos",
     "url": "https://dl.acm.org/doi/abs/10.1145/3544548.3580772",
     "conference": "CHI 2023",
