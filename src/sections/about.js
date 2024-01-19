@@ -18,7 +18,7 @@ function About() {
           <h4>You can call me Diane.</h4>
         </div>
         <p className="py-3">
-          I am an incoming PhD student in the{" "}
+          I am an incoming Ph.D. student in the{" "}
           <a href="http://cs.kaist.ac.kr">School of Computing</a> at KAIST. I am working with{" "}
           <a href="http://juhokim.com">Prof. Juho Kim</a> at{" "}
           <a href="http://kixlab.org">KIXLAB(KAIST Interaction Lab)</a>. I'm interested in
