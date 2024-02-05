@@ -1,5 +1,6 @@
 div.pub-entry {
-  padding: 0.7rem 0;
+  padding: 1rem 0;
+  border-bottom: 0.5px solid #cccccc;
 }
 
 .pub-title {
@@ -23,9 +24,6 @@ div.pub-entry {
 }
 .pub-title a:hover,
 .pub-name a:hover {
-  text-decoration: wavy underline #ffc651;
-}
-a.pub-title:hover {
   text-decoration: wavy underline #ffc651;
 }
 

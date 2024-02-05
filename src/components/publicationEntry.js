@@ -2,17 +2,34 @@ import "./publicationEntry.css";
 
 // Custom button component
 function PublicationButton({ href, icon, text, award = false }) {
+  if (href === null) {
+    return (
+      <div
+        className="badge text-bg-primary mt-0"
+        href={href}
+        style={{
+          color: "black",
+          fontSize: "12px",
+          fontWeight: "600",
+          cursor: "default",
+          boxShadow: "none",
+        }}
+      >
+        {icon && <i className={"pe-1 " + icon}></i>}
+        {text}
+      </div>
+    );
+  }
   return (
     <a
-      className={"btn btn-sm me-2" + (award ? " btn-primary" : " btn-secondary")}
+      className="btn btn-sm btn-secondary me-2 mt-0"
       href={href}
       style={{
         padding: "2px 6px",
         color: "black",
         fontSize: "12px",
         fontWeight: "600",
-        cursor: award ? "default" : "pointer",
-        boxShadow: award ? "none" : "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
+        boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
       }}
     >
       {icon && <i className={"pe-1 " + icon}></i>}
@@ -27,8 +44,17 @@ function PublicationEntry({ publication }) {
       <div className="d-lg-flex justify-content-between">
         <div>
           <div className="pub-title">
+            <div className="mb-1">
+              {publication.award?.split(",").map((award) => (
+                <div className="badge text-bg-primary mt-0 me-2" style={{ fontWeight: "600" }}>
+                  <i className="pe-1 bi bi-award"></i>
+                  {award}
+                </div>
+              ))}
+            </div>
             <a href={publication.url}>{publication.title}</a>
           </div>
+
           <div className="pub-name pb-1">
             {publication.authors.map((author, i) => (
               <>
@@ -54,9 +80,6 @@ function PublicationEntry({ publication }) {
 
       <div className="pub-detail my-1 mt-1">
         {publication.workshop && <div className="mb-2">{publication.workshop}</div>}
-        {publication.award?.split(",").map((award) => (
-          <PublicationButton href={null} icon="bi bi-award" text={award} award={true} />
-        ))}
         {publication.website && (
           <PublicationButton
             href={publication.website}
