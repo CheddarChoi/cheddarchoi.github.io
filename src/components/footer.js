@@ -22,7 +22,7 @@ const Footer = (props) => {
             </a>
           </div>
           <div className="col-4 text-end">
-            <div>Last Updated: Oct 13, 2023</div>
+            <div>Last Updated: Mar 9, 2024</div>
           </div>
         </div>
       </div>
