@@ -1,17 +1,1 @@
-[
-  {
-    "title": "GenQuery: Supporting Expressive Visual Search with Generative Models",
-    "url": "https://arxiv.org/abs/2310.01287",
-    "conference": "arXiv preprint",
-    "authors": [
-      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
-      { "name": "DaEun Choi" },
-      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
-      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
-      { "name": "Juho Kim", "url": "https://juhokim.com/" }
-    ],
-    "toappear": false,
-    "website": "https://genquery.kixlab.org/",
-    "pdf": "https://arxiv.org/pdf/2310.01287.pdf"
-  }
-]
+
