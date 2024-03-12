@@ -39,7 +39,8 @@
       { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2403.06252"
   },
   {
     "title": "Surch: Enabling Structural Search and Comparison for Surgical Videos",
