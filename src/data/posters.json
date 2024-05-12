@@ -1,5 +1,23 @@
 [
   {
+    "title": "Unveiling Disparities in Web Task Handling Between Human and Web Agent",
+    "url": "",
+    "conference": "CHI 2024 Workshop",
+    "workshop": "CHI 2024 Computational UI Workshop",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Jinhyeon Kwon" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
+      { "name": "Sangdoo Yun" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": false,
+    "img": "/assets/img/stylette.png",
+    "pdf": "https://arxiv.org/pdf/2405.04497"
+  },
+  {
     "title": "AudiLens: Configurable LLM-Generated Audiences for Public Speech Practice",
     "url": "https://dl.acm.org/doi/abs/10.1145/3586182.3625114",
     "conference": "UIST 2023 SIC",
