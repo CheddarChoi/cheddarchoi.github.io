@@ -15,7 +15,7 @@ function About() {
       <Col sm={12} md={12} lg={8}>
         <div className="name-section">
           <h1>Hi, I'm DaEun Choi!👋</h1>
-          <h4>You can call me Diane.</h4>
+          {/* <h4>You can call me Diane.</h4> */}
         </div>
         <p className="py-3">
           I am a 1st-year Ph.D. student in the{" "}

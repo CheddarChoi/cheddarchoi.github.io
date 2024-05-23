@@ -32,7 +32,7 @@ function App() {
     var scrollMaxY = 300;
     var currScroll = window.pageYOffset || document.documentElement.scrollTop;
     var percent = Math.abs(Math.min((currScroll * 100) / scrollMaxY, 100));
-    console.log(percent);
+    // console.log(percent);
     setPercent(percent);
   };
 

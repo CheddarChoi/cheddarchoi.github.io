@@ -1,5 +1,20 @@
 [
   {
+    "title": "A Context-Aware Onboarding Agent for Metaverse Powered by Large Language Models",
+    "conference": "DIS 2024",
+    "authors": [
+      { "name": "Jihyeong Hong" },
+      { "name": "Yokyung Lee" },
+      { "name": "Dae Hyun Kim", "url": "https://dhkim16.github.io/" },
+      { "name": "DaEun Choi" },
+      { "name": "Yeo-Jin Yoon" },
+      { "name": "Gyu-cheol Lee" },
+      { "name": "Zucheul Lee" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true
+  },
+  {
     "title": "CreativeConnect: Supporting Reference Recombination for Graphic Design Ideation with Generative AI",
     "url": "https://dl.acm.org/doi/10.1145/3613904.3642794",
     "conference": "CHI 2024",
