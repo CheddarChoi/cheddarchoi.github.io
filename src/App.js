@@ -21,32 +21,56 @@ const StyledDiv = styled.div`
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
-  const [percent, setPercent] = useState(0);
+  const [scrollPosition, setScrollPosition] = useState(0);
+  const [aboutBottom, setAboutBottom] = useState(0);
 
   if (window.location.hostname === "cheddarchoi.github.io") {
     let newURL = window.location.href.replace("cheddarchoi.github.io", "daeunchoi.com");
     window.location.href = newURL;
   }
 
-  const handleScrollAnimation = (e) => {
-    var scrollMaxY = 300;
-    var currScroll = window.pageYOffset || document.documentElement.scrollTop;
-    var percent = Math.abs(Math.min((currScroll * 100) / scrollMaxY, 100));
-    // console.log(percent);
-    setPercent(percent);
+  const handleScrollAnimation = () => {
+    const currScroll = window.pageYOffset || document.documentElement.scrollTop;
+    setScrollPosition(currScroll);
   };
 
   useEffect(() => {
-    window.addEventListener("scroll", (e) => {
-      handleScrollAnimation(e);
-    });
+    window.addEventListener("scroll", handleScrollAnimation);
 
     return () => {
-      window.removeEventListener("scroll", (e) => {
-        handleScrollAnimation(e);
-      });
+      window.removeEventListener("scroll", handleScrollAnimation);
     };
   }, []);
+
+  useEffect(() => {
+    const updateAboutBottom = () => {
+      const aboutDiv = document.getElementById("about");
+      if (aboutDiv) {
+        const rect = aboutDiv.getBoundingClientRect();
+        setAboutBottom(rect.bottom + window.scrollY - 120);
+      }
+    };
+
+    updateAboutBottom();
+    window.addEventListener("scroll", handleScrollAnimation);
+    window.addEventListener("resize", updateAboutBottom);
+
+    return () => {
+      window.removeEventListener("scroll", handleScrollAnimation);
+      window.removeEventListener("resize", updateAboutBottom);
+    };
+  }, []);
+
+  const isPastAbout = scrollPosition > aboutBottom;
+  const waveStyles = isPastAbout
+    ? {
+        position: "absolute",
+        top: `${aboutBottom}px`,
+      }
+    : {
+        position: "fixed",
+        top: "0",
+      };
 
   return (
     <BrowserRouter>
@@ -54,11 +78,17 @@ function App() {
         <StyledDiv className={darkMode ? "dark" : "light"}>
           <div
             className="background-container"
-            style={{ backgroundPositionX: `${percent - 10}%` }}
+            style={{
+              ...waveStyles,
+              backgroundPositionX: `${scrollPosition * 0.2}%`,
+            }}
           ></div>
           <div
             className="background-container-flipped"
-            style={{ backgroundPositionX: `${110 - percent}%` }}
+            style={{
+              ...waveStyles,
+              backgroundPositionX: `${100 - scrollPosition * 0.2}%`,
+            }}
           ></div>
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Switch>

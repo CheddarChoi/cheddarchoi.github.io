@@ -8,7 +8,11 @@ import "./about.css";
 
 function About() {
   return (
-    <Row className="custom-section justify-content-center gx-5" style={{ marginBottom: "4rem" }}>
+    <Row
+      id="about"
+      className="custom-section justify-content-center gx-5"
+      style={{ marginBottom: "4rem" }}
+    >
       <Col xs={6} sm={6} md={4}>
         <Image className="w-100" rounded src="daeun.jpg" alt="illustrated version profile" />
       </Col>
