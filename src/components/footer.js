@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
-import "./footer.css";
+import "./footer.scss";
 
 const Footer = (props) => {
   return (
@@ -22,7 +22,7 @@ const Footer = (props) => {
             </a>
           </div>
           <div className="col-4 text-end">
-            <div>Last Updated: June 6, 2024</div>
+            <div>Last Updated: July 5, 2024</div>
           </div>
         </div>
       </div>

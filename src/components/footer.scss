@@ -1,0 +1,14 @@
+$primary-color: #ffc651;
+
+.footer-container {
+  position: relative;
+  display: flex;
+  height: 150px;
+  margin-top: 60px;
+  background-color: rgba($primary-color, 0.57);
+}
+
+.footer-content {
+  z-index: 1;
+  margin-top: 90px;
+}

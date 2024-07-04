@@ -40,10 +40,6 @@ function App() {
             <Redirect path="*" to="/" />
           </Switch>
           <Footer />
-          <div className="position-relative">
-            <div className="footer-background" />
-            <div className="footer-background-flipped" />
-          </div>
         </StyledDiv>
       </ThemeProvider>
     </BrowserRouter>
