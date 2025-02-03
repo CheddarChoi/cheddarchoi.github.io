@@ -7,6 +7,15 @@ import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
 import "./about.css";
 
 function About() {
+  const playAudio = (event, audioUrl) => {
+    const audio = new Audio(audioUrl);
+    audio.play();
+    event.target.classList.add("active");
+    audio.onended = () => {
+      event.target.classList.remove("active");
+    };
+  };
+
   return (
     <Row
       id="about"
@@ -19,6 +28,17 @@ function About() {
       <Col sm={12} md={12} lg={8}>
         <div className="name-section">
           <h1>Hi, I'm DaEun Choi!👋</h1>
+          <div className="name-description">
+            DaEun (다은; 多恩), is pronounced like 'Dawn' but longer, with a soft 'uh' in between.{" "}
+            <span
+              style={{ cursor: "pointer" }}
+              onClick={(e) =>
+                playAudio(e, "https://en-audio.howtopronounce.com/1616834028605eedeccf695.mp3")
+              }
+            >
+              🔈
+            </span>
+          </div>
           {/* <h4>You can call me Diane.</h4> */}
         </div>
         <p className="py-3">
