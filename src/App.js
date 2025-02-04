@@ -14,7 +14,6 @@ import ReactGA from "react-ga4";
 
 const TRACKING_ID = "G-2EGWKG1G8W";
 ReactGA.initialize(TRACKING_ID);
-ReactGA.send("pageview");
 
 const StyledDiv = styled.div`
   background-color: ${(props) => props.theme.colors.bgColor};

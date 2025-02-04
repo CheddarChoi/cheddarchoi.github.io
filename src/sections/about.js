@@ -1,5 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Col, Image, Row } from "react-bootstrap";
+import ReactGA from "react-ga4";
 
 import { faGithubSquare, faTwitterSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelopeSquare } from "@fortawesome/free-solid-svg-icons";
@@ -8,6 +9,11 @@ import "./about.css";
 
 function About() {
   const playAudio = (event, audioUrl) => {
+    ReactGA.event({
+      category: "Pronunciation",
+      action: "play",
+      label: "name",
+    });
     const audio = new Audio(audioUrl);
     audio.play();
     event.target.classList.add("active");
