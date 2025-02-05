@@ -10,9 +10,9 @@ import "./about.css";
 function About() {
   const playAudio = (event, audioUrl) => {
     ReactGA.event({
-      category: "Pronunciation",
-      action: "play",
-      label: "name",
+      category: "name_pronunciation",
+      action: "play_name_audio",
+      label: "name_pronunciation",
     });
     const audio = new Audio(audioUrl);
     audio.play();
@@ -20,6 +20,14 @@ function About() {
     audio.onended = () => {
       event.target.classList.remove("active");
     };
+  };
+
+  const trackButtonClick = (buttonName) => {
+    ReactGA.event({
+      category: "button",
+      action: "click_" + buttonName,
+      label: buttonName,
+    });
   };
 
   return (
@@ -64,7 +72,13 @@ function About() {
           creativity supporting tools.
         </p>
         <div className="icon-section">
-          <a className="iconLink" target="_blank" href="/CV.pdf" rel="noreferrer">
+          <a
+            className="iconLink"
+            target="_blank"
+            href="/CV.pdf"
+            rel="noreferrer"
+            onClick={() => trackButtonClick("cv")}
+          >
             <i class="ai ai-cv-square fa-2x"></i>
           </a>
           <a
@@ -72,6 +86,7 @@ function About() {
             target="_blank"
             href="mailto:daeun.choi@kaist.ac.kr"
             rel="noreferrer"
+            onClick={() => trackButtonClick("email")}
           >
             <FontAwesomeIcon icon={faEnvelopeSquare} size="2x" />
           </a>
@@ -80,6 +95,7 @@ function About() {
             target="_blank"
             href="https://scholar.google.com/citations?user=pI3S-WQAAAAJ"
             rel="noreferrer"
+            onClick={() => trackButtonClick("google_scholar")}
           >
             <i className="ai ai-google-scholar-square fa-2x"></i>
           </a>
@@ -88,6 +104,7 @@ function About() {
             target="_blank"
             href="https://github.com/CheddarChoi/"
             rel="noreferrer"
+            onClick={() => trackButtonClick("github")}
           >
             <FontAwesomeIcon icon={faGithubSquare} size="2x" />
           </a>
@@ -96,6 +113,7 @@ function About() {
             target="_blank"
             href="https://twitter.com/daeun_choi_"
             rel="noreferrer"
+            onClick={() => trackButtonClick("twitter")}
           >
             <FontAwesomeIcon icon={faTwitterSquare} size="2x" />
           </a>
@@ -104,6 +122,7 @@ function About() {
             target="_blank"
             href="https://www.linkedin.com/in/daeun-choi-1103/"
             rel="noreferrer"
+            onClick={() => trackButtonClick("linkedin")}
           >
             <FontAwesomeIcon icon={faLinkedin} size="2x" />
           </a>
