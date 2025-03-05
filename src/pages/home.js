@@ -1,5 +1,6 @@
 import About from "../sections/about";
 import Publications from "../sections/publications";
+import Services from "../sections/services";
 
 function Home() {
   return (
@@ -7,6 +8,7 @@ function Home() {
       <div className="custom-container position-relative" style={{ marginTop: "3rem" }}>
         <About />
         <Publications />
+        <Services />
       </div>
     </>
   );

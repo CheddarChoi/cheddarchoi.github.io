@@ -1,5 +1,19 @@
 [
   {
+    "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",
+    "url": "",
+    "conference": "CHI 2025 LBW",
+    "workshop": "CHI 2025 Late-Breaking Work",
+    "authors": [
+      { "name": "DaEun Choi" },
+      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
+      { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2503.00791"
+  },
+  {
     "title": "Unveiling Disparities in Web Task Handling Between Human and Web Agent",
     "url": "",
     "conference": "CHI 2024 Workshop",
@@ -14,8 +28,8 @@
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "toappear": false,
-    "img": "/assets/img/stylette.png",
-    "pdf": "https://arxiv.org/pdf/2405.04497"
+    "img": "",
+    "arxiv": "https://arxiv.org/pdf/2405.04497"
   },
   {
     "title": "AudiLens: Configurable LLM-Generated Audiences for Public Speech Practice",
@@ -27,7 +41,7 @@
       { "name": "DaEun Choi *" }
     ],
     "toappear": false,
-    "img": "/assets/img/stylette.png",
+    "img": "",
     "pdf": "/audilens.pdf",
     "award": "Jury's Best SIC Honorable Mention Award"
   },
@@ -43,6 +57,6 @@
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "toappear": false,
-    "img": "/assets/img/stylette.png"
+    "img": ""
   }
 ]
