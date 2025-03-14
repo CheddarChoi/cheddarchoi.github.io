@@ -56,20 +56,20 @@ function About() {
           {/* <h4>You can call me Diane.</h4> */}
         </div>
         <p className="py-3">
-          I am a 1st-year Ph.D. student in the{" "}
-          <a className="custom-link" href="http://cs.kaist.ac.kr">
-            School of Computing
-          </a>{" "}
-          at KAIST. I am working with{" "}
-          <a className="custom-link" href="http://juhokim.com">
+          I am a 2nd-year Ph.D. student at{" "}
+          <a className="custom-link" href="https://kaist.ac.kr">
+            KAIST
+          </a>
+          , working with{" "}
+          <a className="custom-link" href="https://juhokim.com">
             Prof. Juho Kim
           </a>{" "}
           at{" "}
-          <a className="custom-link" href="http://kixlab.org">
-            KIXLAB(KAIST Interaction Lab)
+          <a className="custom-link" href="https://kixlab.org">
+            KIXLAB (KAIST Interaction Lab)
           </a>
-          . I'm interested in Human-Computer Interaction(HCI), especially in building AI-infused
-          creativity supporting tools.
+          . My research interest is in Human-Computer Interaction (HCI), especially in designing
+          AI-infused creativity supporting tools.
         </p>
         <div className="icon-section">
           <a
