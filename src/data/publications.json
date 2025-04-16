@@ -4,7 +4,10 @@
     "url": "https://dl.acm.org/doi/10.1145/3643834.3661579",
     "conference": "DIS 2024",
     "authors": [
-      { "name": "Jihyeong Hong" },
+      {
+        "name": "Jihyeong Hong",
+        "url": "https://harmonious-prune-381.notion.site/Jihyeong-Hong-44f4f7033cbb480e944eeaf8fb22b30a"
+      },
       { "name": "Yokyung Lee" },
       { "name": "Dae Hyun Kim", "url": "https://dhkim16.github.io/" },
       { "name": "DaEun Choi" },
@@ -21,7 +24,7 @@
     "conference": "CHI 2024",
     "authors": [
       { "name": "DaEun Choi" },
-      { "name": "Sumin Hong" },
+      { "name": "Sumin Hong", "url": "https://suminhong.me/" },
       { "name": "Jeongeon Park", "url": "https://jeongeonpark.com/" },
       { "name": "John Joon Young Chung", "url": "https://johnr0.github.io/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
@@ -68,7 +71,7 @@
       { "name": "Jeongyeon Kim", "url": "https://www.jeongyeon.kim/" },
       { "name": "DaEun Choi" },
       { "name": "Nicole Lee" },
-      { "name": "Matthew Beane", "url": "https://tmp.ucsb.edu/people/matt-beane" },
+      { "name": "Matthew Beane", "url": "https://www.mattbeane.com/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "toappear": false,

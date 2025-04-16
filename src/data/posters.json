@@ -53,7 +53,7 @@
     "authors": [
       { "name": "Jeongyeon Kim", "url": "https://www.jeongyeon.kim/" },
       { "name": "DaEun Choi" },
-      { "name": "Matthew Beane" },
+      { "name": "Matthew Beane", "url": "https://www.mattbeane.com/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "toappear": false,
