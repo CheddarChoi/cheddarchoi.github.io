@@ -1,7 +1,7 @@
 [
   {
     "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",
-    "url": "",
+    "url": "https://dl.acm.org/doi/10.1145/3706599.3720189",
     "conference": "CHI 2025 LBW",
     "workshop": "CHI 2025 Late-Breaking Work",
     "authors": [
@@ -10,7 +10,7 @@
       { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true,
+    "toappear": false,
     "arxiv": "https://arxiv.org/abs/2503.00791"
   },
   {

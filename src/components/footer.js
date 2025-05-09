@@ -9,7 +9,7 @@ const Footer = (props) => {
       <div className="custom-container footer-content">
         <div className="row align-items-center pb-3" style={{ fontSize: "0.75rem" }}>
           <div className="col-4 text-start">
-            <div>© 2024 Created by DaEun Choi</div>
+            <div>© 2025 Created by DaEun Choi</div>
           </div>
           <div className="col-4 text-center">
             <a
@@ -22,7 +22,7 @@ const Footer = (props) => {
             </a>
           </div>
           <div className="col-4 text-end">
-            <div>Last Updated: Mar 14, 2025</div>
+            <div>Last Updated: May 9, 2025</div>
           </div>
         </div>
       </div>
