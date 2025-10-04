@@ -1,7 +1,5 @@
 import { Nav, Navbar } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
-import { faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = (props) => {
   return (
@@ -9,7 +7,7 @@ const Header = (props) => {
       bg="transparent"
       expand="lg"
       variant={props.darkMode ? "dark" : "light"}
-      className="py-4 position-relative"
+      className="py-3 position-relative"
     >
       <div className="custom-container d-flex align-items-center justify-content-between">
         <Navbar.Brand href="/">
@@ -26,21 +24,6 @@ const Header = (props) => {
           <Nav className="ms-auto">
             <Nav.Link href="/">About</Nav.Link>
             <Nav.Link href="#publications">Publications</Nav.Link>
-            <Nav.Link>
-              {props.darkMode ? (
-                <FontAwesomeIcon
-                  icon={faSun}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => props.setDarkMode(false)}
-                />
-              ) : (
-                <FontAwesomeIcon
-                  icon={faMoon}
-                  style={{ cursor: "pointer" }}
-                  onClick={() => props.setDarkMode(true)}
-                />
-              )}
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </div>

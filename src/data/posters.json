@@ -1,6 +1,7 @@
 [
   {
     "title": "IdeaBlocks: Expressing and Reusing Exploratory Intents for Design Exploration with Generative AI",
+    "url": "https://dl.acm.org/doi/10.1145/3746058.3759001",
     "conference": "UIST 2025 Demos",
     "workshop": "UIST 2025 Demos",
     "authors": [
@@ -10,11 +11,11 @@
       { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true
+    "toappear": false
   },
   {
     "title": "ThematicPlane: Bridging Tacit User Intent and Latent Spaces for Image Generation",
-    "url": "https://dl.acm.org/doi/10.1145/3706599.3720189",
+    "url": "https://dl.acm.org/doi/10.1145/3746058.3758376",
     "conference": "UIST 2025 Posters",
     "workshop": "UIST 2025 Posters",
     "authors": [
@@ -26,7 +27,7 @@
       { "name": "Jeonghwan Kim" },
       { "name": "Heng Ji" }
     ],
-    "toappear": true
+    "toappear": false
   },
   {
     "title": "Expandora: Broadening Design Exploration with Text-to-Image Model",

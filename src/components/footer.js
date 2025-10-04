@@ -1,7 +1,5 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
-
 import "./footer.scss";
+import { ReactComponent as GithubIcon } from "../components/icons/github.svg";
 
 const Footer = (props) => {
   return (
@@ -13,16 +11,15 @@ const Footer = (props) => {
           </div>
           <div className="col-4 text-center">
             <a
-              className="iconLink"
               target="_blank"
               href="https://github.com/CheddarChoi/cheddarchoi.github.io"
               rel="noreferrer"
             >
-              <FontAwesomeIcon icon={faGithub} size="xl" />
+              <GithubIcon style={{ width: "20px", height: "20px" }} />
             </a>
           </div>
           <div className="col-4 text-end">
-            <div>Last Updated: May 9, 2025</div>
+            <div>Last Updated: Oct 4, 2025</div>
           </div>
         </div>
       </div>

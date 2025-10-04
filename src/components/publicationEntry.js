@@ -21,17 +21,7 @@ function PublicationButton({ href, icon, text, award = false }) {
     );
   }
   return (
-    <a
-      className="btn btn-sm btn-secondary me-2 mt-0"
-      href={href}
-      style={{
-        padding: "2px 6px",
-        color: "black",
-        fontSize: "12px",
-        fontWeight: "600",
-        boxShadow: "rgba(0, 0, 0, 0.1) 0px 1px 2px 0px",
-      }}
-    >
+    <a className="iconLink large me-1" href={href}>
       {icon && <i className={"pe-1 " + icon}></i>}
       {text}
     </a>
