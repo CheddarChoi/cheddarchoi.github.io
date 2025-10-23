@@ -12,7 +12,7 @@ import { ReactComponent as LinkedinIcon } from "../components/icons/linkedin.svg
 import "./about.css";
 
 function About() {
-  const [hovered, setHovered] = useState("");
+  const [shownImage, setShownImage] = useState("daeun");
 
   const playAudio = (event, audioUrl) => {
     ReactGA.event({
@@ -45,30 +45,17 @@ function About() {
       <Col xs={6} sm={6} md={4}>
         <div className="d-flex flex-column align-items-center gap-3">
           <div style={{ width: "100%", position: "relative", aspectRatio: "1 / 1" }}>
-            <AnimatePresence initial={false}>
-              {!hovered ? (
-                <motion.img
-                  key="still"
-                  src="daeun2.jpeg"
-                  className="w-100 rounded"
-                  style={{ position: "absolute", inset: 0, objectFit: "cover" }}
-                  initial={{ opacity: 0, scale: 1.02 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.22, ease: "easeOut" }}
-                />
-              ) : (
-                <motion.img
-                  key="wave"
-                  src="hi.jpeg"
-                  className="w-100 rounded"
-                  style={{ position: "absolute", inset: 0, objectFit: "cover" }}
-                  initial={{ opacity: 0, scale: 1.02 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.98 }}
-                  transition={{ duration: 0.22, ease: "easeOut" }}
-                />
-              )}
+            <AnimatePresence mode="wait" initial={true}>
+              <motion.img
+                key={shownImage}
+                src={`images/${shownImage}.jpeg`}
+                className="w-100 rounded"
+                style={{ position: "absolute", inset: 0, objectFit: "cover" }}
+                initial={{ opacity: 0, scale: 1.02 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.22, ease: "easeOut" }}
+              />
             </AnimatePresence>
           </div>
           <div className="icon-section">
@@ -123,8 +110,8 @@ function About() {
       <Col sm={12} md={12} lg={8}>
         <div className="name-section">
           <h1
-            onMouseEnter={() => setHovered("hi")}
-            onMouseLeave={() => setHovered("")}
+            onMouseEnter={() => setShownImage("hi")}
+            onMouseLeave={() => setShownImage("daeun")}
             style={{ cursor: "pointer" }}
           >
             Hi, I'm DaEun Choi!👋
@@ -148,14 +135,33 @@ function About() {
             KAIST
           </a>
           , working with{" "}
-          <a className="custom-link" href="https://juhokim.com">
+          <a
+            className="custom-link"
+            href="https://juhokim.com"
+            onMouseEnter={() => setShownImage("juho")}
+            onMouseLeave={() => setShownImage("daeun")}
+          >
             Prof. Juho Kim
           </a>{" "}
           at{" "}
-          <a className="custom-link" href="https://kixlab.org">
+          <a
+            className="custom-link"
+            href="https://kixlab.org"
+            onMouseEnter={() => setShownImage("kixlab")}
+            onMouseLeave={() => setShownImage("daeun")}
+          >
             KIXLAB
           </a>
-          .
+          . I did my internship at{" "}
+          <a
+            className="custom-link"
+            href="https://research.adobe.com/"
+            onMouseEnter={() => setShownImage("adobe")}
+            onMouseLeave={() => setShownImage("daeun")}
+          >
+            Adobe Research
+          </a>
+          in the summer of 2025.
         </p>
         <p>
           My research interest is in <b>Human-Computer Interaction (HCI)</b>. I design interactions
