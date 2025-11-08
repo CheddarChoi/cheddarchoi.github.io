@@ -9,6 +9,31 @@
       { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "arxiv": "https://www.arxiv.org/abs/2507.22163"
+    "arxiv": "https://arxiv.org/abs/2507.22163"
+  },
+  {
+    "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
+    "conference": "Under Submission",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoonson.com/" },
+      { "name": "DaEun Choi" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
+      { "name": "Sangdoo Yun" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "arxiv": "https://arxiv.org/abs/2509.14537"
+  },
+  {
+    "title": "Feed-O-Meter: Fostering Design Feedback Skills through Role-playing Interactions with AI Mentee",
+    "conference": "Under Submission",
+    "authors": [
+      { "name": "Hyunseung Lim" },
+      { "name": "Dasom Choi" },
+      { "name": "DaEun Choi" },
+      { "name": "Sooyohn Nam" },
+      { "name": "Hwajung Hong" }
+    ],
+    "arxiv": "https://arxiv.org/abs/2509.07424"
   }
 ]
