@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactGA from "react-ga4";
@@ -13,6 +13,22 @@ import "./about.css";
 
 function About() {
   const [shownImage, setShownImage] = useState("daeun");
+
+  const IMAGE_KEYS = ["daeun", "hi", "juho", "kixlab", "adobe"];
+  const IMAGE_SRCS = IMAGE_KEYS.map((k) => `/images/${k}.jpeg`);
+  const preloadedImagesRef = useRef([]);
+
+  useEffect(() => {
+    preloadedImagesRef.current = IMAGE_SRCS.map((src) => {
+      const img = new Image();
+      img.onload = () => {};
+      img.onerror = () => {
+        console.log("Failed to load image: " + src);
+      };
+      img.src = src;
+      return img;
+    });
+  }, []);
 
   const playAudio = (event, audioUrl) => {
     ReactGA.event({
