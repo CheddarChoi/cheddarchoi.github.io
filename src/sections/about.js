@@ -8,6 +8,7 @@ import { ReactComponent as MailIcon } from "../components/icons/mail.svg";
 import { ReactComponent as GoogleScholarIcon } from "../components/icons/google-scholar.svg";
 import { ReactComponent as TwitterIcon } from "../components/icons/x-twitter.svg";
 import { ReactComponent as LinkedinIcon } from "../components/icons/linkedin.svg";
+import { ReactComponent as SemanticScholarIcon } from "../components/icons/semantic-scholar.svg";
 
 import "./about.css";
 
@@ -101,6 +102,15 @@ function About() {
               onClick={() => trackButtonClick("google_scholar")}
             >
               <GoogleScholarIcon />
+            </a>
+            <a
+              className="iconLink"
+              target="_blank"
+              href="https://www.semanticscholar.org/author/DaEun-Choi/2214749926"
+              rel="noreferrer"
+              onClick={() => trackButtonClick("semantic_scholar")}
+            >
+              <SemanticScholarIcon />
             </a>
             <a
               className="iconLink"
