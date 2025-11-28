@@ -70,6 +70,9 @@ function PublicationEntry({ publication }) {
 
       <div className="pub-detail my-1 mt-1">
         {publication.workshop && <div className="mb-2">{publication.workshop}</div>}
+        {publication.url && (
+          <PublicationButton href={publication.url} icon="bi bi-link-45deg" text="DOI" />
+        )}
         {publication.website && (
           <PublicationButton
             href={publication.website}

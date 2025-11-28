@@ -1,5 +1,19 @@
 [
   {
+    "title": "Feed-O-Meter: Investigating AI-Generated Mentee Personas as Interactive Agents for Scaffolding Design Feedback Practice",
+    "url": "https://doi.org/10.1016/j.ijhcs.2025.103687",
+    "conference": "IJHCS",
+    "authors": [
+      { "name": "Hyunseung Lim" },
+      { "name": "Dasom Choi" },
+      { "name": "DaEun Choi" },
+      { "name": "Sooyohn Nam" },
+      { "name": "Hwajung Hong" }
+    ],
+    "toappear": false,
+    "arxiv": "https://arxiv.org/abs/2509.07424"
+  },
+  {
     "title": "A Context-Aware Onboarding Agent for Metaverse Powered by Large Language Models",
     "url": "https://dl.acm.org/doi/10.1145/3643834.3661579",
     "conference": "DIS 2024",
