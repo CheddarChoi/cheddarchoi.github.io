@@ -29,7 +29,7 @@ function About() {
       img.src = src;
       return img;
     });
-  }, []);
+  }, [IMAGE_SRCS]);
 
   const playAudio = (event, audioUrl) => {
     ReactGA.event({
