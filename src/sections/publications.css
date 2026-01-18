@@ -1,0 +1,113 @@
+.publications-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-button {
+  cursor: pointer;
+  user-select: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  font-weight: 500;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ececec;
+  color: #555;
+  transition: all 0.2s ease-in-out;
+  margin-left: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.filter-button.active {
+  background-color: #ffc651;
+  color: #000;
+  box-shadow: 0 2px 4px rgba(255, 198, 81, 0.3);
+}
+
+.filter-button:hover:not(.active) {
+  background-color: #d4d4d4;
+}
+
+.filter-button.active:hover {
+  box-shadow: 0 3px 6px rgba(255, 198, 81, 0.4);
+}
+
+.toggle-switch {
+  display: inline-block;
+  width: 20px;
+  height: 12px;
+  border-radius: 12px;
+  background-color: #999;
+  position: relative;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.filter-button.active .toggle-switch {
+  background-color: #000;
+}
+
+.toggle-switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: left 0.2s ease-in-out;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.filter-button.active .toggle-switch-handle {
+  left: 10px;
+}
+
+.publications-list {
+  position: relative;
+}
+
+.publication-item {
+  animation: fadeInSlide 0.4s ease-out;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out, max-height 0.3s ease-out;
+}
+
+.publication-item.entering {
+  animation: fadeInSlide 0.4s ease-out;
+}
+
+.publication-item.exiting {
+  animation: fadeOutSlide 0.3s ease-in forwards;
+  pointer-events: none;
+}
+
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOutSlide {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 500px;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+}

@@ -1,5 +1,19 @@
 [
   {
+    "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
+    "conference": "CHI 2026",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoon-son.github.io/" },
+      { "name": "DaEun Choi" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
+      { "name": "Sangdoo Yun" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2509.14537"
+  },
+  {
     "title": "Feed-O-Meter: Investigating AI-Generated Mentee Personas as Interactive Agents for Scaffolding Design Feedback Practice",
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103687",
     "conference": "IJHCS",

@@ -1,6 +1,6 @@
 [
   {
-    "title": "IdeaBlocks: Expressing and Reusing Exploratory Intents for Design Exploration with Generative AI",
+    "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
     "conference": "Under Submission",
     "authors": [
       { "name": "DaEun Choi" },
@@ -10,18 +10,5 @@
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "arxiv": "https://arxiv.org/abs/2507.22163"
-  },
-  {
-    "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
-    "conference": "Under Submission",
-    "authors": [
-      { "name": "Kihoon Son", "url": "https://kihoon-son.github.io/" },
-      { "name": "DaEun Choi" },
-      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
-      { "name": "Young-Ho Kim", "url": "http://younghokim.net/" },
-      { "name": "Sangdoo Yun" },
-      { "name": "Juho Kim", "url": "https://juhokim.com/" }
-    ],
-    "arxiv": "https://arxiv.org/abs/2509.14537"
   }
 ]

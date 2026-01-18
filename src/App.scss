@@ -81,9 +81,11 @@ a.iconLink {
 
   transition: box-shadow 0.1s ease-in-out;
   text-decoration: none;
+
+  box-shadow: 1.5px 1.5px 0 0 #747474;
 }
 a.iconLink:hover {
-  box-shadow: 2px 2px 0 0 #747474;
+  box-shadow: 3px 3px 0 0 #747474;
 }
 
 a.iconLink.large {
