@@ -8,8 +8,8 @@ function Services() {
           <ul>
             <li>CHI 2025 - 2026</li>
             <li>UIST 2025</li>
-            <li>CHI LBW 2024 - 2025</li>
-            <li>DIS 2024 - 2025</li>
+            <li>CHI LBW (Posters) 2024 - 2026</li>
+            <li>DIS 2024 - 2026</li>
           </ul>
           <h4>Student Volunteer</h4>
           <ul>

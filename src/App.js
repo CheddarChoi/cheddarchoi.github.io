@@ -9,6 +9,7 @@ import Header from "./components/header";
 import Home from "./pages/home";
 import Footer from "./components/footer";
 import Wave from "./components/Wave";
+import CursorFollower from "./components/CursorFollower";
 
 import ReactGA from "react-ga4";
 
@@ -32,6 +33,7 @@ function App() {
     <BrowserRouter>
       <ThemeProvider theme={darkMode ? dark : light}>
         <StyledDiv className={darkMode ? "dark" : "light"}>
+          <CursorFollower />
           <Wave />
           <Header darkMode={darkMode} setDarkMode={setDarkMode} />
           <Switch>

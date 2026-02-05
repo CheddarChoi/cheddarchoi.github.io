@@ -18,11 +18,14 @@
     "url": "https://doi.org/10.1016/j.ijhcs.2025.103687",
     "conference": "IJHCS",
     "authors": [
-      { "name": "Hyunseung Lim" },
-      { "name": "Dasom Choi" },
+      { "name": "Hyunseung Lim", "url": "https://hyunseunglim.com/" },
+      { "name": "Dasom Choi", "url": "https://dasomchoi.com/" },
       { "name": "DaEun Choi" },
-      { "name": "Sooyohn Nam" },
-      { "name": "Hwajung Hong" }
+      { "name": "Sooyohn Nam", "url": "https://www.namsuyeon.me/" },
+      {
+        "name": "Hwajung Hong",
+        "url": "https://galaxytourist.notion.site/Hwajung-Hong-cc10b0291bbe4ca38dbf4882cd687423"
+      }
     ],
     "toappear": false,
     "arxiv": "https://arxiv.org/abs/2509.07424"
