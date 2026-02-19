@@ -45,10 +45,9 @@
   height: 100%;
   background: rgba(255, 212, 125, 0.6);
   transform-origin: bottom;
-  transform: scaleY(0.12);
+  transform: scaleY(0.1);
   transition: transform 0.22s ease-out;
   z-index: -1;
-  border-radius: 4px;
 }
 
 #about .custom-link:hover::after {
@@ -56,16 +55,16 @@
 }
 
 .about-highlight {
-  margin-top: 1.5rem;
-  padding: 1rem 1.25rem;
+  margin-top: 12px;
+  padding: 16px 20px;
   border-radius: 12px;
   background-color: #ffffff;
-  border: 1px solid #e5e7eb;
+  border: 1px solid #ffd166;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
   position: relative;
   overflow: hidden;
 }
-
+/* 
 .about-highlight::before {
   content: "";
   position: absolute;
@@ -75,6 +74,10 @@
   border-radius: 12px 0 0 12px;
   width: 6px;
   background: linear-gradient(180deg, #ffe8a3, #ffd166);
+} */
+
+.about-highlight b {
+  font-weight: 600;
 }
 
 .inline-logo {

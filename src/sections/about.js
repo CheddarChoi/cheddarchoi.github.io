@@ -195,20 +195,16 @@ function About() {
           for generative AI systems that support human creativity by enabling the expression, reuse,
           and evolution of ideas across diverse creative processes.
         </p>
-        {/* <div className="about-highlight">
+        <div className="about-highlight">
           <div>
             <span>
-              I'll be in Toronto as a research intern at{" "}
-              <img
-                src="/images/logos/autodesk.png"
-                alt="Autodesk logo"
-                className="inline-logo"
-              />{" "}
+              I'll be in <b>Toronto</b> as a research intern at{" "}
+              <img src="/images/logos/autodesk.png" alt="Autodesk logo" className="inline-logo" />{" "}
               <b>Autodesk</b> this summer!
             </span>
           </div>
           <div className="mt-1 name-description">Feel free to reach out if you're around ☀️</div>
-        </div> */}
+        </div>
       </Col>
     </Row>
   );
