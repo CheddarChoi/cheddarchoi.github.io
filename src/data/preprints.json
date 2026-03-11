@@ -10,5 +10,21 @@
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
     "arxiv": "https://arxiv.org/abs/2507.22163"
+  },
+  {
+    "title": "\"When to Hand Off, When to Work Together\": Expanding Human-Agent Co-Creative Collaboration through Concurrent Interaction",
+    "conference": "Arxiv",
+    "authors": [
+      { "name": "Kihoon Son", "url": "https://kihoon-son.github.io/" },
+      { "name": "Hyewon Lee", "url": "https://hyewon.me/" },
+      { "name": "DaEun Choi" },
+      { "name": "Yoonsu Kim", "url": "https://yoonsu0816.github.io/" },
+      { "name": "Tae Soo Kim", "url": "https://taesookim.com/" },
+      { "name": "Yoonjoo Lee", "url": "https://yoonjoolee.com/" },
+      { "name": "John Joon Young Chung", "url": "https://johnr0.github.io/" },
+      { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
+      { "name": "Juho Kim", "url": "https://juhokim.com/" }
+    ],
+    "arxiv": "https://arxiv.org/abs/2603.02050"
   }
 ]

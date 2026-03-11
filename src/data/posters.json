@@ -1,5 +1,18 @@
 [
   {
+    "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
+    "conference": "CHI 2026 LBW",
+    "workshop": "CHI 2026 Late-Breaking Work",
+    "authors": [
+      { "name": "Eunhye Kim*", "url": "https://gracekim.me/" },
+      { "name": "Minju Yoo*", "url": "https://minjuu1.github.io/" },
+      { "name": "Jenny Yang" },
+      { "name": "DaEun Choi" }
+    ],
+    "toappear": true,
+    "pdf": "https://gracekim.me/docs/ProtoTrace.pdf"
+  },
+  {
     "title": "IdeaBlocks: Expressing and Reusing Exploratory Intents for Design Exploration with Generative AI",
     "url": "https://dl.acm.org/doi/10.1145/3746058.3759001",
     "conference": "UIST 2025 Demos",
@@ -67,8 +80,8 @@
     "conference": "UIST 2023 SIC",
     "workshop": "UIST 2023 Student Innovation Contest",
     "authors": [
-      { "name": "Jeongeon Park *", "url": "https://jeongeonpark.com/" },
-      { "name": "DaEun Choi *" }
+      { "name": "Jeongeon Park*", "url": "https://jeongeonpark.com/" },
+      { "name": "DaEun Choi*" }
     ],
     "toappear": false,
     "img": "",
