@@ -1,17 +1,5 @@
 [
   {
-    "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
-    "conference": "Under Submission",
-    "authors": [
-      { "name": "DaEun Choi" },
-      { "name": "Kihoon Son", "url": "https://kihoon-son.github.io/" },
-      { "name": "Jaesang Yu" },
-      { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
-      { "name": "Juho Kim", "url": "https://juhokim.com/" }
-    ],
-    "arxiv": "https://arxiv.org/abs/2507.22163"
-  },
-  {
     "title": "\"When to Hand Off, When to Work Together\": Expanding Human-Agent Co-Creative Collaboration through Concurrent Interaction",
     "conference": "Arxiv",
     "authors": [
