@@ -7,7 +7,7 @@ function Services() {
           <h4>Reviewer</h4>
           <ul>
             <li>CHI 2025 - 2026</li>
-            <li>UIST 2025</li>
+            <li>UIST 2025 - 2026</li>
             <li>DIS 2024 - 2026</li>
             <li>C&C 2026</li>
             <li>CHI LBW (Posters) 2024 - 2026</li>
