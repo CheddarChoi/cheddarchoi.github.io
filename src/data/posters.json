@@ -1,6 +1,7 @@
 [
   {
     "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
+    "url": "https://dl.acm.org/doi/10.1145/3772363.3798883",
     "conference": "CHI 2026 Posters",
     "workshop": "CHI 2026 Posters",
     "authors": [
@@ -9,7 +10,7 @@
       { "name": "Jenny Yang" },
       { "name": "DaEun Choi" }
     ],
-    "toappear": true,
+    "toappear": false,
     "pdf": "https://gracekim.me/docs/ProtoTrace.pdf"
   },
   {
