@@ -1,6 +1,7 @@
 [
   {
     "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
+    "url": "https://dl.acm.org/doi/10.1145/3800645.3813005",
     "conference": "DIS 2026",
     "authors": [
       { "name": "DaEun Choi" },
@@ -9,9 +10,10 @@
       { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true,
+    "toappear": false,
     "award": "Honorable Mention Award",
-    "arxiv": "https://arxiv.org/abs/2507.22163"
+    "arxiv": "https://arxiv.org/abs/2507.22163",
+    "website": "https://ideablocks.kixlab.org"
   },
   {
     "title": "ClearFairy: Capturing Creative Workflows through Decision Structuring, In-Situ Questioning, and Rationale Inference",
