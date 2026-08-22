@@ -1,5 +1,24 @@
 [
   {
+    "title": "Tasteply: Externalizing Stable and Situational Preference as Manipulable Spatial Objects",
+    "conference": "UIST 2026 Posters",
+    "workshop": "UIST 2026 Posters",
+    "authors": [{ "name": "DaEun Choi" }, { "name": "Daniel Lee" }],
+    "toappear": true
+  },
+  {
+    "title": "CORAL: Continually Learning Generative Interfaces from Collective User Interactions",
+    "conference": "UIST 2026 Posters",
+    "workshop": "UIST 2026 Posters",
+    "authors": [
+      { "name": "Daniel Lee" },
+      { "name": "DaEun Choi" },
+      { "name": "Hyewon Lee", "url": "https://hyewon.me/" },
+      { "name": "Haijun Xia", "url": "https://haijunxia.ucsd.edu/" }
+    ],
+    "toappear": true
+  },
+  {
     "title": "Supporting Design Reasoning in AI-assisted Interface Prototyping for HCI Research",
     "url": "https://dl.acm.org/doi/10.1145/3772363.3798883",
     "conference": "CHI 2026 Posters",
@@ -21,7 +40,7 @@
     "authors": [
       { "name": "DaEun Choi" },
       { "name": "Kihoon Son", "url": "https://kihoon-son.github.io/" },
-      { "name": "Jaesang Yu" },
+      { "name": "Jaesang Yu", "url": "https://www.jaesangyu.com/" },
       { "name": "Hyunjoon Jung", "url": "https://www.linkedin.com/in/hyunvincero/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],

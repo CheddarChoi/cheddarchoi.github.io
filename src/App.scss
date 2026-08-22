@@ -33,10 +33,17 @@ $primary-color-darken: #f0a100;
   width: 0;
   height: 0;
   border-radius: 999px;
-  background: radial-gradient(circle at 30% 30%, rgba(255, 232, 163, 0.7), rgba($primary-color, 0.7));
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 232, 163, 0.7),
+    rgba($primary-color, 0.7)
+  );
   transform: translate(-50%, -50%) scale(0);
   transform-origin: center center;
-  transition: width 0.3s ease-out, height 0.3s ease-out, transform 0.3s ease-out;
+  transition:
+    width 0.3s ease-out,
+    height 0.3s ease-out,
+    transform 0.3s ease-out;
   z-index: -1;
 }
 
@@ -51,7 +58,7 @@ $primary-color-darken: #f0a100;
 }
 
 .custom-container {
-  width: 860px;
+  width: 900px;
   margin: auto;
   flex-wrap: inherit;
 }

@@ -34,13 +34,17 @@ div.pub-detail {
 }
 
 div.pub-venue {
-  width: 120px;
+  padding-top: 4px;
+  padding-bottom: 0px;
+  width: 140px;
   text-align: right;
 }
 @media screen and (max-width: 991px) {
   div.pub-venue {
     width: 100%;
     text-align: left;
+    padding-top: 0;
+    padding-bottom: 4px;
   }
 }
 

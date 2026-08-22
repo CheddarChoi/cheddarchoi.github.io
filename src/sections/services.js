@@ -4,6 +4,10 @@ function Services() {
       <div id="services" className="custom-section justify-content-center">
         <h2>Academic Services</h2>
         <div>
+          <h4>Program Committee</h4>
+          <ul>
+            <li>UIST Posters 2026</li>
+          </ul>
           <h4>Reviewer</h4>
           <ul>
             <li>CHI 2025 - 2026</li>

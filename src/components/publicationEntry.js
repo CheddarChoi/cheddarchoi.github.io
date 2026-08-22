@@ -31,7 +31,7 @@ function PublicationButton({ href, icon, text, award = false }) {
 function PublicationEntry({ publication }) {
   return (
     <div className="pub-entry">
-      <div className="d-lg-flex justify-content-between">
+      <div className="d-lg-flex justify-content-between gap-3">
         <div>
           <div className="pub-title">
             <div className="mb-1">
