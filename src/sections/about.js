@@ -15,7 +15,7 @@ import "./about.css";
 function About() {
   const [shownImage, setShownImage] = useState("daeun");
 
-  const IMAGE_KEYS = ["daeun", "hi", "juho", "kixlab", "adobe"];
+  const IMAGE_KEYS = ["daeun", "hi", "juho", "kixlab", "adobe", "autodesk"];
   const IMAGE_SRCS = IMAGE_KEYS.map((k) => `/images/${k}.jpeg`);
   const preloadedImagesRef = useRef([]);
 
@@ -178,7 +178,7 @@ function About() {
           >
             KIXLAB
           </a>
-          . I did my internship at{" "}
+          . I interned at{" "}
           <a
             className="custom-link"
             href="https://research.adobe.com/"
@@ -188,14 +188,24 @@ function About() {
             <img src="/images/logos/adobe.png" alt="Adobe logo" className="inline-logo" />
             Adobe Research
           </a>
-          in the summer of 2025.
+          in summer 2025 and at
+          <a
+            className="custom-link"
+            href="https://www.research.autodesk.com/"
+            onMouseEnter={() => setShownImage("autodesk")}
+            onMouseLeave={() => setShownImage("daeun")}
+          >
+            <img src="/images/logos/autodesk.png" alt="Autodesk logo" className="inline-logo" />
+            Autodesk Research
+          </a>
+          in summer 2026.
         </p>
         <p>
           My research interest is in <b>Human-Computer Interaction (HCI)</b>. I design interactions
           for generative AI systems that support human creativity by enabling the expression, reuse,
           and evolution of ideas across diverse creative processes.
         </p>
-        <div className="about-highlight">
+        {/* <div className="about-highlight">
           <div>
             <span>
               I'm now in <b>Toronto</b> as a research intern at{" "}
@@ -204,7 +214,7 @@ function About() {
             </span>
           </div>
           <div className="mt-1 name-description">Feel free to reach out if you're around ☀️</div>
-        </div>
+        </div> */}
       </Col>
     </Row>
   );

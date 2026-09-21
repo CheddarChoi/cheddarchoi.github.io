@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//Users/daeun/Downloads/**)"
+    ],
+    "additionalDirectories": [
+      "/Users/daeun/Downloads"
+    ]
+  }
+}
