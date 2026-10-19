@@ -8,12 +8,13 @@ const SERVICE_GROUPS = [
   {
     role: "Reviewer",
     items: [
-      { name: "CHI", year: "2025 – 2026" },
-      { name: "UIST", year: "2025 – 2026" },
-      { name: "DIS", year: "2024 – 2026" },
-      { name: "C&C", year: "2026" },
+      { name: "CHI", year: "2025 – 2026", award: "⭐ '26, '25×2" },
+      { name: "UIST", year: "2025 – 2026", award: "⭐ '26×2, '25×2" },
+      { name: "DIS", year: "2024 – 2026", award: "⭐ '26, '25, '24" },
+      { name: "C&C", year: "2026", award: "⭐ '26×3" },
       { name: "CHI LBW (Posters)", year: "2024 – 2026" },
     ],
+    legend: "⭐ Special Recognition for Outstanding Reviews",
   },
   {
     role: "Student Volunteer",
@@ -37,9 +38,11 @@ function Services() {
                 <li key={item.name}>
                   <span className="service-venue">{item.name}</span>{" "}
                   <span className="service-year">{item.year}</span>
+                  {item.award && <span className="service-award"> {item.award}</span>}
                 </li>
               ))}
             </ul>
+            {group.legend && <div className="service-legend">{group.legend}</div>}
           </div>
         ))}
       </div>

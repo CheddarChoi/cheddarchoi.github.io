@@ -65,3 +65,39 @@ span.my-name {
   margin-right: 5px;
   margin-top: 5px;
 }
+
+/* Publication link buttons; the project website gets the accent color */
+.pub-detail a.pub-link {
+  --bg: #ececec;
+  --fg: #2f2f2f;
+  --edge: #747474;
+
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 9px;
+  font-size: 11px;
+  font-weight: 600;
+  border-radius: 100px;
+  border: 1px solid var(--edge);
+  background: var(--bg);
+  color: var(--fg);
+  text-decoration: none;
+  box-shadow: 1.5px 1.5px 0 0 var(--edge);
+  transition: box-shadow 0.1s ease-in-out, transform 0.1s ease-in-out;
+}
+.pub-detail a.pub-link:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: 3px 3px 0 0 var(--edge);
+}
+.pub-detail a.pub-link:active {
+  transform: translate(1px, 1px);
+  box-shadow: 0 0 0 0 var(--edge);
+}
+
+.pub-detail a.pub-link.pub-link-website { --bg: #ffeab0; --fg: #4a3500; --edge: #e3b54a; }
+
+.badge.pub-award-badge {
+  font-weight: 600;
+  background-color: #ffeab0;
+  color: #4a3500;
+}

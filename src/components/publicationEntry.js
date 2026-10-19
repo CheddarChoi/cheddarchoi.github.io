@@ -1,7 +1,7 @@
 import "./publicationEntry.css";
 
 // Custom button component
-function PublicationButton({ href, icon, text, award = false }) {
+function PublicationButton({ href, icon, text, type, award = false }) {
   if (href === null) {
     return (
       <div
@@ -21,7 +21,7 @@ function PublicationButton({ href, icon, text, award = false }) {
     );
   }
   return (
-    <a className="iconLink large me-1" href={href}>
+    <a className={`pub-link pub-link-${type} me-1`} href={href}>
       {icon && <i className={"pe-1 " + icon}></i>}
       {text}
     </a>
@@ -36,7 +36,7 @@ function PublicationEntry({ publication }) {
           <div className="pub-title">
             <div className="mb-1">
               {publication.award?.split(",").map((award) => (
-                <div className="badge text-bg-primary mt-0 me-2" style={{ fontWeight: "600" }}>
+                <div className="badge pub-award-badge mt-0 me-2">
                   <i className="pe-1 bi bi-award"></i>
                   {award}
                 </div>
@@ -70,24 +70,25 @@ function PublicationEntry({ publication }) {
 
       <div className="pub-detail my-1 mt-1">
         {publication.workshop && <div className="mb-2">{publication.workshop}</div>}
-        {publication.url && (
-          <PublicationButton href={publication.url} icon="bi bi-link-45deg" text="DOI" />
-        )}
         {publication.website && (
           <PublicationButton
             href={publication.website}
+            type="website"
             icon="bi bi-house-fill"
             text="Project website"
           />
         )}
+        {publication.url && (
+          <PublicationButton href={publication.url} type="doi" text="DOI" />
+        )}
         {publication.arxiv && (
-          <PublicationButton href={publication.arxiv} icon="bi bi-file-pdf-fill" text="Arxiv" />
+          <PublicationButton href={publication.arxiv} type="arxiv" text="arXiv" />
         )}
         {publication.pdf && (
-          <PublicationButton href={publication.pdf} icon="bi bi-file-pdf-fill" text="PDF" />
+          <PublicationButton href={publication.pdf} type="pdf" icon="bi bi-file-pdf-fill" text="PDF" />
         )}
         {publication.video && (
-          <PublicationButton href={publication.video} icon="bi bi-camera-video-fill" text="Video" />
+          <PublicationButton href={publication.video} type="video" icon="bi bi-camera-video-fill" text="Video" />
         )}
       </div>
     </div>
