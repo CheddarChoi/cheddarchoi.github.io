@@ -1,29 +1,7 @@
 import "./services.css";
+import servicesData from "../data/services.json";
 
-const SERVICE_GROUPS = [
-  {
-    role: "Program Committee",
-    items: [{ name: "UIST Posters", year: "2026" }],
-  },
-  {
-    role: "Reviewer",
-    items: [
-      { name: "CHI", year: "2025 – 2026", award: "⭐ '26, '25×2" },
-      { name: "UIST", year: "2025 – 2026", award: "⭐ '26×2, '25×2" },
-      { name: "DIS", year: "2024 – 2026", award: "⭐ '26, '25, '24" },
-      { name: "C&C", year: "2026", award: "⭐ '26×3" },
-      { name: "CHI LBW (Posters)", year: "2024 – 2026" },
-    ],
-    legend: "⭐ Special Recognition for Outstanding Reviews",
-  },
-  {
-    role: "Student Volunteer",
-    items: [
-      { name: "CHI", year: "2024 – 2025" },
-      { name: "CSCW", year: "2022" },
-    ],
-  },
-];
+const SERVICE_GROUPS = servicesData;
 
 function Services() {
   return (
