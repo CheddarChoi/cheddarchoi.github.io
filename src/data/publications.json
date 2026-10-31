@@ -10,7 +10,8 @@
       { "name": "Yue Jiang", "url": "https://yuejiang-nj.github.io/" },
       { "name": "Juho Kim", "url": "https://juhokim.com/" }
     ],
-    "toappear": true
+    "toappear": true,
+    "arxiv": "https://arxiv.org/abs/2608.25565"
   },
   {
     "title": "IdeaBlocks: Expressing and Reusing Divergent Intents for Graphic Design Exploration using Generative AI",
