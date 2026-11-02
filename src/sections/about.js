@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Col, Row } from "react-bootstrap";
 import { motion, AnimatePresence } from "framer-motion";
 import ReactGA from "react-ga4";
+import { useDraggable, WaveSticker } from "../components/stickers";
 
 import { ReactComponent as CVIcon } from "../components/icons/cv.svg";
 import { ReactComponent as MailIcon } from "../components/icons/mail.svg";
@@ -14,6 +15,7 @@ import "./about.css";
 
 function About() {
   const [shownImage, setShownImage] = useState("daeun");
+  const drag = useDraggable();
 
   const IMAGE_KEYS = ["daeun", "hi", "juho", "kixlab", "adobe", "autodesk"];
   const IMAGE_SRCS = IMAGE_KEYS.map((k) => `/images/${k}.jpeg`);
@@ -140,7 +142,8 @@ function About() {
             onMouseLeave={() => setShownImage("daeun")}
             style={{ cursor: "pointer" }}
           >
-            Hi, I'm DaEun Choi!👋
+            Hi, I'm DaEun Choi!
+            <WaveSticker />
           </h1>
           <div className="name-description">
             DaEun (다은; 多恩), is pronounced like 'Dawn' but longer, with a soft 'uh' in between.{" "}
@@ -154,6 +157,54 @@ function About() {
             </span>
           </div>
           {/* <h4>You can call me Diane.</h4> */}
+        </div>
+        {/* Highlight box for announcements (currently UIST 2026). Swap the text or remove when done. */}
+        <div className="highlight-box">
+          <svg width="0" height="0" style={{ position: "absolute" }} aria-hidden="true">
+            <filter id="highlight-outline" x="-5%" y="-10%" width="110%" height="120%">
+              <feMorphology in="SourceAlpha" operator="dilate" radius="0.8" result="d" />
+              <feComposite in="d" in2="SourceAlpha" operator="out" result="ring" />
+              <feFlood floodColor="#2b1600" result="c" />
+              <feComposite in="c" in2="ring" operator="in" result="line" />
+              <feMerge>
+                <feMergeNode in="SourceGraphic" />
+                <feMergeNode in="line" />
+              </feMerge>
+            </filter>
+          </svg>
+          <span className="highlight-bg" aria-hidden="true" />
+          <svg
+            className={`highlight-sticker${drag.dragging ? " dragging" : ""}${drag.moved ? " moved" : ""}`}
+            style={drag.style}
+            {...drag.dragProps}
+            viewBox="-8 -8 80 80"
+            aria-hidden="true"
+          >
+            <g fill="#fff" stroke="#fff" strokeWidth="13" strokeLinejoin="round" strokeLinecap="round">
+              <path d="M12 14 Q32 10 52 13 L50 46 Q31 50 13 47 Z" />
+              <path d="M24 47 L21 58 M40 47 L43 58" fill="none" />
+            </g>
+            <g stroke="#2b1600" strokeWidth="3" strokeLinejoin="round" strokeLinecap="round">
+              <path d="M24 47 L21 58 M40 47 L43 58" fill="none" />
+              <path d="M12 14 Q32 10 52 13 L50 46 Q31 50 13 47 Z" fill="#f26b3a" />
+              <path d="M19 21 Q32 19 45 20 L44 35 Q32 36 19 35 Z" fill="#ffe3a3" strokeWidth="2.5" />
+              <path d="M32 22 L34 26 L38 28 L34 30 L32 34 L30 30 L26 28 L30 26 Z" fill="#2b1600" strokeWidth="1.5" />
+              <path d="M19 41 H38" fill="none" strokeWidth="2.5" />
+            </g>
+          </svg>
+          <div className="highlight-title">UIST 2026</div>
+          <span>
+            Not there in person, but my poster{" "}
+            <a
+              className="custom-link"
+              href="https://programs.sigchi.org/uist/2026/program/content/275955"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <b>Tasteply</b>
+            </a>{" "}
+            is! Check it out on Tuesday, Nov 3 at <b>Ontario Hall D4</b>. Always happy to chat remotely too!
+          </span>
         </div>
         <p className="pt-3">
           I am a 3rd-year Ph.D. student in the School of Computing at{" "}

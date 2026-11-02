@@ -101,3 +101,67 @@ span.my-name {
   background-color: #ffeab0;
   color: #4a3500;
 }
+
+.pub-venue {
+  position: relative;
+  align-self: flex-start;
+}
+.pub-sticker {
+  position: absolute;
+  top: 37px;
+  right: 6px;
+  width: 52px;
+  height: 52px;
+  overflow: visible;
+  --rot: 6deg;
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(var(--rot));
+  transition: transform 0.25s ease;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+}
+.publication-item:nth-child(even) .pub-sticker {
+  --rot: -7deg;
+}
+.pub-sticker-outline * {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 10px;
+  stroke-dasharray: none;
+}
+.pub-sticker:hover {
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(calc(var(--rot) * -1));
+}
+.pub-sticker.moved {
+  z-index: 30;
+}
+.pub-sticker.dragging {
+  z-index: 40;
+  cursor: grabbing;
+  transition: none;
+}
+@media screen and (max-width: 991px) {
+  div.pub-entry {
+    position: relative;
+  }
+  .pub-venue {
+    position: static;
+  }
+  .pub-links {
+    padding-right: 44px;
+  }
+  .pub-sticker {
+    top: auto;
+    bottom: 14px;
+    right: 0;
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .pub-workshop {
+    max-width: calc(100% - 160px);
+  }
+}

@@ -1,4 +1,5 @@
 import "./publicationEntry.css";
+import { PubSticker } from "./stickers";
 
 // Custom button component
 function PublicationButton({ href, icon, text, type, award = false }) {
@@ -65,11 +66,12 @@ function PublicationEntry({ publication }) {
           <b>{publication.conference}</b>
           <br className="d-none d-lg-block" />
           {publication.toappear ? " (To appear)" : ""}
+          <PubSticker title={publication.title} />
         </div>
       </div>
 
-      <div className="pub-detail my-1 mt-1">
-        {publication.workshop && <div className="mb-2">{publication.workshop}</div>}
+      <div className="pub-detail pub-links my-1 mt-1">
+        {publication.workshop && <div className="mb-2 pub-workshop">{publication.workshop}</div>}
         {publication.website && (
           <PublicationButton
             href={publication.website}

@@ -88,3 +88,107 @@
   margin-left: 2px;
   padding-bottom: 2px;
 }
+
+.highlight-box {
+  position: relative;
+  z-index: 20;
+  margin-top: 32px;
+  padding: 22px 28px 24px;
+  color: #2f2f2f;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  transform: rotate(-0.8deg);
+}
+
+/* Reusable highlight box: scalloped (cloud-like) edge with a thin ink outline.
+   .highlight-bg is its own element so the mask and outline never touch the sticker.
+   The #highlight-outline SVG filter (see about.js) draws the outline, ::before is the fill. */
+.highlight-bg {
+  --scallop: 18px;
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  filter: url(#highlight-outline);
+}
+
+.highlight-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #fff0c9;
+  -webkit-mask:
+    linear-gradient(#000 0 0) center / calc(100% - var(--scallop)) calc(100% - var(--scallop)) no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 0 / var(--scallop) var(--scallop) round no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 100% / var(--scallop) var(--scallop) round no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 0 / var(--scallop) var(--scallop) no-repeat round,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 100% 0 / var(--scallop) var(--scallop) no-repeat round;
+  mask:
+    linear-gradient(#000 0 0) center / calc(100% - var(--scallop)) calc(100% - var(--scallop)) no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 0 / var(--scallop) var(--scallop) round no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 100% / var(--scallop) var(--scallop) round no-repeat,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 0 0 / var(--scallop) var(--scallop) no-repeat round,
+    radial-gradient(closest-side, #000 calc(100% - 0.5px), #0000) 100% 0 / var(--scallop) var(--scallop) no-repeat round;
+}
+
+.highlight-box .custom-link {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.highlight-title {
+  margin-bottom: 4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.highlight-sticker {
+  position: absolute;
+  top: -26px;
+  right: 14px;
+  width: 72px;
+  height: 72px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+  --rot: 10deg;
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(var(--rot));
+  transition: transform 0.25s ease;
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.highlight-sticker:hover {
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(calc(var(--rot) * -1));
+}
+
+.highlight-sticker.dragging {
+  cursor: grabbing;
+  transition: none;
+}
+
+.wave-sticker {
+  display: inline-block;
+  width: 1.7em;
+  height: 1.7em;
+  margin: -0.4em 0 -0.4em 0.1em;
+  vertical-align: 0.05em;
+  overflow: visible;
+  --rot: 8deg;
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(var(--rot));
+  transition: transform 0.25s ease;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.2));
+  cursor: grab;
+  touch-action: none;
+  user-select: none;
+}
+
+.wave-sticker:hover {
+  transform: translate(var(--dx, 0px), var(--dy, 0px)) rotate(calc(var(--rot) * -1));
+}
+
+.wave-sticker.dragging {
+  cursor: grabbing;
+  transition: none;
+}
